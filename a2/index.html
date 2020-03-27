@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #000000;">
+  <!-- NAVBAR -->
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color: #000000;">
     <a class="navbar-brand" href="index.html">
       <img src="media/Logo.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
       DuyTuong
@@ -28,7 +29,7 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto ">
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#aboutus">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Prices</a>
@@ -48,11 +49,12 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-danger" type="submit">Search</button>
+        <button class="btn btn-outline-info" type="submit">Search</button>
       </form>
     </div>
   </nav>
 
+  <!-- HOMEPAGE -->
   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="10000">
@@ -75,28 +77,31 @@
     </a>
   </div>
 
-  <article class="container-fluid px-0 p-3 mb-2 bg-secondary text-white ">
-    <div class="row align-items-center content  ">
-      <div class="col-md-6 order-2 order-md-1 sticky-top">
-        <img src="media/dolbycinema.jpg" alt="" class="img-fluid ">
+  <!--ABOUT US  -->
+
+  <article id="aboutus" class="container-fluid p-3 mb-2 text-white " style="background-color: #352f2f">
+    <h2 class="text-light text-center">ABOUT US:</h2>
+    <div class="row align-items-center content">
+      <div class="col-md-6  order-1 ">
+        <img src="media/dolbycinema.jpg" alt="" class="img-fluid">
       </div>
-      <div class="col-md-6 text-center order-1 order-md-2">
+      <div class="col-md-6 order-2 order-md-2">
         <div class="row justify-content-center">
-          <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-            <h2 class="text-light bg-dark">ABOUT US:</h2>
-            <p class=" text-body lead "><b>Welcome to our theater, where you can enjoy and deep in an overwhelming
+          <div class="col-10  blurb mb-5 mb-md-0">
+            <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+            <p class="lead "><b>Welcome to our theater, where you can enjoy and deep in an overwhelming
                 quality of the footage and sound.
                 Why? Because now, after the evolution of upgrading the theater, all customers could enjoy all the
                 technology of 3D Dolby Vision projection and Dolby Atmos sound:</b>
               <ul>
                 <li>
-                  Powered by dual-laser projection technology and engineered for a consistent experience, Dolby Vision
-                  lets you see more of the story.
+                  Powered by dual-laser projection technology and engineered for a consistent experience, Dolby
+                  Vision lets you see more of the story.
 
                 </li>
                 <li>
-                  <b>Moving audio could flow all around you, even from above and behind, put you at the center of the
-                    story.</b>
+                  <b>Moving audio could flow all around you, even from above and behind, put you at the center of
+                    the story.</b>
                 </li>
               </ul>
             </p>
