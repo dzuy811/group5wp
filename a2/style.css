@@ -1,59 +1,60 @@
 /* Insert your styles here */
 .navbar-dark {
-    background-color: black;
+  background-color: black;
 }
 .glow {
-    font-family: cursive;
-     font-size: 5vw;
-     color: #fff;
-     text-align: center;
-     -webkit-animation: glow 1s ease-in-out infinite alternate;
-     -moz-animation: glow 1s ease-in-out infinite alternate;
-     animation: glow 1s ease-in-out infinite alternate;
-     
-   }
+  font-family: cursive;
+  font-size: 5vw;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
 
 .demoFont {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 40px;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: rgba(255, 255, 255, 0.801);
-    font-weight: 700;
-    text-decoration: none solid rgb(68, 68, 68);
-    font-style: normal;
-    font-variant: small-caps;
-    text-transform: uppercase;
-    }
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: rgba(255, 255, 255, 0.801);
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
 
-   @-webkit-keyframes glow {
-     from {
-       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-     }
-     
-     to {
-       text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-     }
-   }
-   .parallax-div {
-    /* The image used */
-    background-image: url("media/cinema04.jpg");
-  
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
 
-hr.style{
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.parallax-div {
+  /* The image used */
+  background-image: url("media/cinema04.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr.style {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
 hr.style-two {
@@ -65,7 +66,7 @@ hr.style-two {
   border-radius: 20px;
 }
 
-hr.style-two:before { 
+hr.style-two:before {
   display: block;
   content: "";
   height: 30px;
@@ -85,7 +86,7 @@ hr.style-white {
   border-radius: 20px;
 }
 
-hr.style-white:before { 
+hr.style-white:before {
   display: block;
   content: "";
   height: 30px;
@@ -101,10 +102,23 @@ hr.style-white:before {
   font-size: 40px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: underline solid rgb(68, 68, 68);
   font-style: normal;
   font-variant: small-caps;
   text-transform: uppercase;
-  }
+}
+
+.demoFont3 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 23px;
+  letter-spacing: -1px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
