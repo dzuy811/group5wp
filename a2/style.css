@@ -12,6 +12,20 @@
      animation: glow 1s ease-in-out infinite alternate;
      
    }
+
+.demoFont {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: rgba(255, 255, 255, 0.801);
+    font-weight: 700;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    }
+
    @-webkit-keyframes glow {
      from {
        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -34,3 +48,4 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
