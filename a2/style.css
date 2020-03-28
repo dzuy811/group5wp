@@ -97,28 +97,4 @@ hr.style-white:before {
   border-radius: 20px;
 }
 
-.demoFont2 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 40px;
-  letter-spacing: 2px;
-  word-spacing: 2px;
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: underline solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: small-caps;
-  text-transform: uppercase;
-}
 
-.demoFont3 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 23px;
-  letter-spacing: -1px;
-  word-spacing: 2px;
-  color: #000000;
-  font-weight: 400;
-  text-decoration: none solid rgb(68, 68, 68);
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-}
