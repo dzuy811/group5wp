@@ -325,17 +325,20 @@
 
   <!-- Booking Area -->
   <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
+    <form action="">
     <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
     <div class="container card bg-light " style="border-color:#000000">
       <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE - DAY - TIME</h1>
-      
+
       <div class="card-body">
         <div>
           <div class="row">
+            <!-- LEFT BOOKING FORM -->
             <div class="col-md-6">
               <div class="card container mb-3" style="border-color:#000000">
                 <p>Standard</p>
-                <form action="">
+                <div class="form-group">
+
                   <label class="col-sm-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
                   <select name="Standard" id="ChairsAdult" class="btn btn-info dropdown-toggle">
                     <option value=""></option>
@@ -380,11 +383,12 @@
                     <option value="">9</option>
                     <option value="">10</option>
                   </select>
-                </form>
+
+                </div>
               </div>
               <div class="card container" style="border-color:#000000">
                 <p>First Class</p>
-                <form action="">
+                <div class="form-group">
                   <label class="col-sm-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
                   <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
                     <option value=""></option>
@@ -429,11 +433,14 @@
                     <option value="">9</option>
                     <option value="">10</option>
                   </select>
-                </form>
+                </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <form>
+            <!-- LEFT BOOKING FORM -->
+
+             <!-- RIGHT BOOKING FORM -->
+            <div class="col-md-6 ">
+              <div class="form-group">
                 <div class="form-group row" style="padding-top: 20px">
                   <label for="Name" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
@@ -465,8 +472,13 @@
                     <input type="Month" class="form-control" id="inputDate" name="birthday" required>
                   </div>
                 </div>
+              </div>
             </div>
+              <!-- END RIGHT BOOKING FORM -->
+
+
           </div>
+          <!-- SUBMIT BTN -->
           <div style="padding-top: 20px">
             <div class="row">
               <div class="col-md-6">
@@ -477,24 +489,26 @@
               </div>
             </div>
           </div>
+          <!-- END SUBMIT BTN -->
         </div>
       </div>
     </div>
-    </div>
+  </form>
   </article>
   <!-- FOOTER -->
   <footer style="background-color: #352f2f;">
-      <h3 class= "text-center text-info" style="padding-top:10px; padding-bottom:10px;">CONTACT US </h3>
-      <div class="container">
-        <div class="row text-white">
+    <h3 class="text-center text-info" style="padding-top:10px; padding-bottom:10px;">CONTACT US </h3>
+    <div class="container">
+      <!-- UPPER FOOTER -->
+      <div class="row text-white">
         <div class="col">
           <div class="">
-          <p>Student: VO TRAN TRUONG DUY</p>
-          <p>ID: S3818381</p>
-          <p>EMAIL: S3818381@rmit.edu.vn</p>
-          <p>PHONE: 0903818381</p>
+            <p>Student: VO TRAN TRUONG DUY</p>
+            <p>ID: S3818381</p>
+            <p>EMAIL: S3818381@rmit.edu.vn</p>
+            <p>PHONE: 0903818381</p>
           </div>
-          
+
         </div>
         <div class="col">
           <div class="">
@@ -503,36 +517,36 @@
             <p>EMAIL: S3818196@rmit.edu.vn</p>
             <p>PHONE: 0903818196</p>
           </div>
-          
+
         </div>
 
         <div class="col-md-2 mb-5">
           <p>Quick Links<p>
-          <ul class="list-unstyled footer-link">
-            <li><a href="#aboutus"class="text-info">About us</a></li>
-            <li><a href="#seating" class="text-info">Prices</a></li>
-            <li><a href="film" class="text-info">Now Showing</a></li>
-            
-          </ul>
+              <ul class="list-unstyled footer-link">
+                <li><a href="#aboutus" class="text-info">About us</a></li>
+                <li><a href="#seating" class="text-info">Prices</a></li>
+                <li><a href="film" class="text-info">Now Showing</a></li>
+
+              </ul>
         </div>
+      </div>
+      <!-- END UPPER FOOTER -->
 
-
-
-
-
-      </div>     
+      <!-- LOWER FOOTER -->
       <div class="row">
         <div class="col-12 text-md-center text-left text-white">
-          <p>&copy; 
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by DUY & TUONG <a class="text-info"  href="https://" target="_blank">CINEMAX</a>
-</p>
+          <p>&copy;
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by DUY &
+            TUONG <a class="text-info" href="https://" target="_blank">CINEMAX</a>
+          </p>
         </div>
       </div>
-      </div>
+    </div>
+    <!-- END LOWER FOOTER -->
 
-      
   </footer>
-  
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
