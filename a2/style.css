@@ -1,4 +1,10 @@
 /* Insert your styles here */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+}
 .navbar-dark {
   background-color: black;
 }
