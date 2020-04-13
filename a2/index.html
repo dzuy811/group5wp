@@ -5,22 +5,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Assignment 2</title>
+  <link id='stylecss1' type="text/css" rel="stylesheet" href="style.css">
 
-  <!-- Keep wireframe.css for debugging, add your css to style.css -->
-
-  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
-  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+  <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
+
+  <script src='../wireframe.js'></script>
 </head>
 
 <body>
+
+  <header>
+    <div style="background-color: #000000;" class=" d-flex"> 
+      <a href="index.html"><img src="media/Logo.jpg" width="75" height="75"></a>
+      <p style="font-size: 3vw; color: white;">Cinemax </p></div>
+  </header>
+
   <!-- NAVBAR -->
   <nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color: #000000;">
-    <a class="navbar-brand" href="index.html">
-      <img src="media/Logo.jpg" width="35" height="35" class="d-inline-block align-top" alt="">
-      Cinemax
-    </a>
+    <a class="navbar-brand" href="index.html">Cinemax</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -54,449 +60,442 @@
     </div>
   </nav>
 
-  <!-- CAUROUSEL -->
-  <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="10000">
-        <img src="media/cinema02.jpg" height="600px" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-interval="2000">
-        <img src="media/cinema01.jpg" height="600px" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="media/cinema03.jpg" height="600px" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+  <main>
+    
+      <video  no-controls autoplay loop muted width="100%">
+         <source src="media/FullHD.mp4" type="video/mp4">
+      </video>
+    
+    
+  
 
-  <!--ABOUT US  -->
+    <!-- ABOUT US -->
+    <article id="aboutus" class="container-fluid text-white " style="padding-top:40px;">
+      <h2 class="demoFont text-info text-center" style="padding: 30px;">About Us:</h2>
+      <div class="row align-items-center content">
+        <div class="col-md-6  order-1">
+          <img src="media/dolbycinema.jpg" alt="" class="img-fluid" style="padding-bottom:30px">
+        </div>
+        <div class="col-md-6 order-2 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10  blurb mb-5 mb-md-0 text-dark">
+              <p class="lead "><b>Welcome to our theater, where you can enjoy and deep in an overwhelming
+                  quality of the footage and sound.
+                  Why? Because now, after the evolution of upgrading the theater, all customers could enjoy all the
+                  technology of 3D Dolby Vision projection and Dolby Atmos sound:</b>
+                <ul>
+                  <li>
+                    Powered by dual-laser projection technology and engineered for a consistent experience, Dolby
+                    Vision lets you see more of the story.
 
-  <article id="aboutus" class="container-fluid text-white " style="padding-top:40px; background-color: #352f2f">
-    <h2 class="demoFont text-info text-center" style="padding: 30px;">About Us:</h2>
-    <div class="row align-items-center content">
-      <div class="col-md-6  order-1">
-        <img src="media/dolbycinema.jpg" alt="" class="img-fluid" style="padding-bottom:30px">
-      </div>
-      <div class="col-md-6 order-2 order-md-2">
-        <div class="row justify-content-center">
-          <div class="col-10  blurb mb-5 mb-md-0">
-            <p class="lead "><b>Welcome to our theater, where you can enjoy and deep in an overwhelming
-                quality of the footage and sound.
-                Why? Because now, after the evolution of upgrading the theater, all customers could enjoy all the
-                technology of 3D Dolby Vision projection and Dolby Atmos sound:</b>
-              <ul>
-                <li>
-                  Powered by dual-laser projection technology and engineered for a consistent experience, Dolby
-                  Vision lets you see more of the story.
-
-                </li>
-                <li>
-                  Moving audio could flow all around you, even from above and behind, put you at the center of
-                  the story.
-                </li>
-              </ul>
-            </p>
+                  </li>
+                  <li>
+                    Moving audio could flow all around you, even from above and behind, put you at the center of
+                    the story.
+                  </li>
+                </ul>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
+    <!-- END ABOUT US -->
 
-  <!--SEATS  -->
+    <!--SEATS  -->
 
-  <article id="" class="container-fluid pt-5 pb-5" style="background-color: black">
-    <div class="d-flex flex-row">
-      <div class="col-5 d-flex justify-content-center">
-        <div class="card" style="width: 30rem;">
-          <img src="media/seat1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text" style="font-size: 2vw; text-align: center;">Standard Seating</p>
+    <article id="" class="container-fluid pt-5 pb-5" style="background-color: black">
+      <div class="d-flex flex-row">
+        <div class="col-5 d-flex justify-content-center">
+          <div class="card" style="width: 30rem;">
+            <img src="media/seat3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 2vw; text-align: center;">Standard Seating</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center" style="padding: 0px 0px;">
+
+          <div class=" glow ">OUR NEW SEATS</div>
+
+        </div>
+        <div class="col-5 d-flex justify-content-center">
+          <div class="card" style="width: 30rem;">
+            <img src="media/seat4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 2vw; text-align: center;">First Class Seating</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-2 d-flex align-items-center" style="padding: 0px 0px;">
+    </article>
+    <!-- END SEATS -->
 
-        <div class=" glow ">OUR NEW SEATS</div>
-
-      </div>
-      <div class="col-5 d-flex justify-content-center">
-        <div class="card" style="width: 30rem;">
-          <img src="media/seat2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text" style="font-size: 2vw; text-align: center;">First Class Seating</p>
-          </div>
+    <!-- Seating Prices -->
+    <article>
+      <div id="seating" class="container-fluid parallax-div">
+        <h1 class="text-center demoFont" style="padding-top:100px">Seating Prices:</h1>
+        <hr class="style-white style-white:before">
+        <div class="table-responsive-xl">
+          <table class="table ">
+            <caption class="text-white bg-dark"><i>* Weekday afternoons at 12 pm (ie weekday matinée sessions,
+                Monday - Friday) and all day on Mondays and Wednesdays.</i></caption>
+            <thead>
+              <tr>
+                <th scope="col" class="table-light">SEAT TYPE</th>
+                <th scope="col" class="text-center table-light">Standard Adult</th>
+                <th scope="col" class="text-center table-light">Standard Concession</th>
+                <th scope="col" class="text-center table-light">Standard Child</th>
+                <th scope="col" class="table-primary text-center">First Class Adult</th>
+                <th scope="col" class="table-primary text-center">First Class Concession</th>
+                <th scope="col" class="table-primary text-center">First Class Child</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="table-light">SEAT CODE</th>
+                <td class="text-center table-light">STA</td>
+                <td class="text-center table-light">STP</td>
+                <td class="text-center table-light">STC</td>
+                <td class="table-primary text-center">FCA</td>
+                <td class="table-primary text-center">FCP</td>
+                <td class="table-primary text-center">FCC</td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-light">NORMAL TIMES</th>
+                <td class="text-center table-light">19.80</td>
+                <td class="text-center table-light">17.50</td>
+                <td class="text-center table-light">15.30</td>
+                <td class="table-primary text-center">30.00</td>
+                <td class="table-primary text-center">27.00</td>
+                <td class="table-primary text-center">24.00</td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-warning"><i>SPEACIAL TIMES *</i></th>
+                <td class="table-warning text-center"><i>14.00</i></td>
+                <td class="table-warning text-center"><i>12.50</i></td>
+                <td class="table-warning text-center"><i>11.00</i></td>
+                <td class="table-warning text-center"><i>24.00</i></td>
+                <td class="table-warning text-center"><i>22.50</i></td>
+                <td class="table-warning text-center"><i>21.00</i></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </div>
-  </article>
+    </article>
+    <!-- END SEATING PRICES -->
 
-  <!-- Seating Prices -->
-  <article>
-    <div id="seating" class="container-fluid parallax-div">
-      <h1 class="text-center demoFont" style="padding-top:100px">Seating Prices:</h1>
-      <hr class="style-white style-white:before">
-      <div class="table-responsive-xl">
-        <table class="table ">
-          <caption class="text-white bg-dark"><i>* Weekday afternoons at 12 pm (ie weekday matinée sessions,
-              Monday - Friday) and all day on Mondays and Wednesdays.</i></caption>
-          <thead>
-            <tr>
-              <th scope="col" class="table-light">SEAT TYPE</th>
-              <th scope="col" class="text-center table-light">Standard Adult</th>
-              <th scope="col" class="text-center table-light">Standard Concession</th>
-              <th scope="col" class="text-center table-light">Standard Child</th>
-              <th scope="col" class="table-primary text-center">First Class Adult</th>
-              <th scope="col" class="table-primary text-center">First Class Concession</th>
-              <th scope="col" class="table-primary text-center">First Class Child</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row" class="table-light">SEAT CODE</th>
-              <td class="text-center table-light">STA</td>
-              <td class="text-center table-light">STP</td>
-              <td class="text-center table-light">STC</td>
-              <td class="table-primary text-center">FCA</td>
-              <td class="table-primary text-center">FCP</td>
-              <td class="table-primary text-center">FCC</td>
-            </tr>
-            <tr>
-              <th scope="row" class="table-light">NORMAL TIMES</th>
-              <td class="text-center table-light">19.80</td>
-              <td class="text-center table-light">17.50</td>
-              <td class="text-center table-light">15.30</td>
-              <td class="table-primary text-center">30.00</td>
-              <td class="table-primary text-center">27.00</td>
-              <td class="table-primary text-center">24.00</td>
-            </tr>
-            <tr>
-              <th scope="row" class="table-warning"><i>SPEACIAL TIMES *</i></th>
-              <td class="table-warning text-center"><i>14.00</i></td>
-              <td class="table-warning text-center"><i>12.50</i></td>
-              <td class="table-warning text-center"><i>11.00</i></td>
-              <td class="table-warning text-center"><i>24.00</i></td>
-              <td class="table-warning text-center"><i>22.50</i></td>
-              <td class="table-warning text-center"><i>21.00</i></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </article>
+    <!-- NOW SHOWING -->
+    <article id="film" class="container-fluid" style="background-color: #f3f3f3;">
+      <div class="demoFont text-info" style=" text-align: center; padding-top: 70px;">Film Showing:</div>
+      <hr class="style-two style-two:before">
+      <!-- 1st row -->
+      <div class="card-desk">
+        <div class="row row-cols-1 row-cols-md-2 ">
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/endgame_poster_02.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> Avengers: Endgame PG-13</b></p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
 
-  <!-- NOW SHOWING -->
-  <article id="film" class="container-fluid" style="background-color: #f3f3f3;">
-    <div class="demoFont text-info" style=" text-align: center; padding-top: 70px;">Film Showing:</div>
-    <hr class="style-two style-two:before">
-    <!-- 1st row -->
-    <div class="card-desk">
-      <div class="row row-cols-1 row-cols-md-2 ">
-        <div class="col-md-6 d-flex justify-content-center ">
-          <div class="card border-info mb-3  w-100" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-5 pt-3 pb-3 pl-3">
-                <img src="media/endgame_poster_02.jpg" class="card-img" alt="...">
+                  </div>
+                </div>
               </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: 4vh;"> <b> Avengers: Endgame PG-13</b></p>
-                  <p class="card-text" style="font-size: 3vh;">WED - 9 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/topEndWedding_poster.jfif" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> Top End Wedding M</b></p>
+                    <p class="card-text" style="font-size: 3vh;">MON - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end 1st row -->
+
+          <!-- 2nd row -->
+
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/dumbo_poster_01.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b>Dumbo PG</b></p>
+                    <p class="card-text" style="font-size: 3vh;">MON - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">TUE - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/theHappyPrince_poster.jfif" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> The Happy Prince R</b></p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
+
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center ">
-          <div class="card border-info mb-3  w-100" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-5 pt-3 pb-3 pl-3">
-                <img src="media/topEndWedding_poster.jfif" class="card-img" alt="...">
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: 4vh;"> <b> Top End Wedding M</b></p>
-                  <p class="card-text" style="font-size: 3vh;">MON - 6 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- end 1st row -->
-
-        <!-- 2nd row -->
-
-        <div class="col-md-6 d-flex justify-content-center ">
-          <div class="card border-info mb-3  w-100" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-5 pt-3 pb-3 pl-3">
-                <img src="media/dumbo_poster_01.jpg" class="card-img" alt="...">
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: 4vh;"> <b>Dumbo PG</b></p>
-                  <p class="card-text" style="font-size: 3vh;">MON - 12 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">TUE - 12 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">WED - 6 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center ">
-          <div class="card border-info mb-3  w-100" style="max-width: 540px;">
-            <div class="row no-gutters">
-              <div class="col-md-5 pt-3 pb-3 pl-3">
-                <img src="media/theHappyPrince_poster.jfif" class="card-img" alt="...">
-              </div>
-              <div class="col-md-7">
-                <div class="card-body">
-                  <p class="card-title" style="font-size: 4vh;"> <b> The Happy Prince R</b></p>
-                  <p class="card-text" style="font-size: 3vh;">WED - 12 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
-                  <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- end 2nd row -->
       </div>
-      <!-- end 2nd row -->
-    </div>
-  </article>
+    </article>
+    <!-- END NOW SHOWING -->
 
-  <!-- SYNOPSIS PANEL -->
-  <article id="Synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f;">
-    <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
-    <div class="container card bg-light " style="border-color:#000000">
-      <div class="card-body ">
-        <h1 class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
-        <hr class="style">
-        <div class="row">
-          <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
-            <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
-            <p class="demoFont3" style="font-size: 18px">After the devastating events of Avengers: Infinity War (2018),
-              the universe is in
-              ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
-              assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what
-              consequences may be in store, and no matter who they face...</p>
-          </div>
-          <div class="col-md-6 row justify-content-center ">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-              style="margin-left: 50px; padding-top: 20px"></iframe>
-          </div>
-          <div style="padding-top:30px">
-            <div class="" data-toggle="buttons">
-              <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Wed - 9 pm </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Fri - 9 pm </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sat - 6 pm </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sun - 6 pm </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
-              <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
-            </div>
-          </div>
-        </div>
-  </article>
-
-  <!-- Booking Area -->
-  <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
-    <form action="">
-    <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
-    <div class="container card bg-light " style="border-color:#000000">
-      <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE - DAY - TIME</h1>
-
-      <div class="card-body">
-        <div>
+    <!-- SYNOPSIS PANEL -->
+    <article id="Synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f;">
+      <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
+      <div class="container card bg-light " style="border-color:#000000">
+        <div class="card-body ">
+          <h1 class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
+          <hr class="style">
           <div class="row">
-            <!-- LEFT BOOKING FORM -->
-            <div class="col-md-6">
-              <div class="card container mb-3" style="border-color:#000000">
-                <p style="font-size: 175%;"><b>Standard</b></p>
-                <div class="form-group">
-
-                  <label class="col-sm-4 col-form-label" for="name" style="padding-bottom: 30px" >Adults</label>
-                  <select name="Standard" id="ChairsAdult" class="btn btn-info dropdown-toggle" >
-                    <option value="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-                  <br>
-                  <label class="col-sm-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
-                  <select name="Standard" id="ChairsConcession" class="btn btn-info dropdown-toggle">
-                    <option value="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-                  <br>
-                  <label class="col-sm-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
-                  <select name="Standard" id="ChairsChildren" class="btn btn-info dropdown-toggle">
-                    <option value="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-
-                </div>
-              </div>
-              <div class="card container" style="border-color:#000000">
-                <p style="font-size: 175%;"><b>First Class</b></p>
-                <div class="form-group">
-                  <label class="col-sm-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
-                  <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
-                    <option value="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-                  <br>
-                  <label class="col-sm-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
-                  <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
-                    <option value="" class="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-                  <br>
-                  <label class="col-sm-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
-                  <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
-                    <option value="" class="">Please Select</option>
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                  </select>
-                </div>
-              </div>
+            <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
+              <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
+              <p class="demoFont3" style="font-size: 18px">After the devastating events of Avengers: Infinity War
+                (2018),
+                the universe is in
+                ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
+                assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what
+                consequences may be in store, and no matter who they face...</p>
             </div>
-            <!-- END LEFT BOOKING FORM -->
-
-             <!-- RIGHT BOOKING FORM -->
-            <div class="col-md-6 d-flex align-items-center justify-content-center">
-              <div class="form-group">
-                <div class="form-group row" style="padding-top: 20px">
-                  <label for="Name" class="col-sm-3 col-form-label">Name</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" id="inputName" placeholder="Name" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="Email" class="col-sm-3 col-form-label">Email</label>
-                  <div class="col-sm-9">
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="Mobile" class="col-sm-3 col-form-label">Mobile</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="CreditCard" class="col-sm-3 col-form-label">Credit Card</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" id="inputCard" placeholder="Credit Card" minlength="14"
-                      maxlength="19" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="Date" class="col-sm-3 col-form-label">Expiry</label>
-                  <div class="col-sm-9">
-                    <input type="Month" class="form-control" id="inputDate" name="birthday" required>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-6 row justify-content-center ">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                style="margin-left: 50px; padding-top: 20px"></iframe>
             </div>
-              <!-- END RIGHT BOOKING FORM -->
-
-
-          </div>
-          <!-- SUBMIT BTN -->
-          <div style="padding-top: 20px">
-            <div class="row">
-              <div class="col-md-6">
-                <p>Total:</p>
-              </div>
-              <div class="col-md-6">
-                <input class="btn btn-info" type="submit" value="Order" style="float:right">
+            <div style="padding-top:30px">
+              <div class="" data-toggle="buttons">
+                <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Wed - 9 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Fri - 9 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sat - 6 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sun - 6 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
               </div>
             </div>
           </div>
-          <!-- END SUBMIT BTN -->
+    </article>
+    <!-- END SYNOPSIS PANEL  -->
+
+    <!-- Booking Area -->
+    <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
+      <form action="">
+        <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
+        <div class="container card bg-light " style="border-color:#000000">
+          <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE - DAY - TIME</h1>
+
+          <div class="card-body">
+            <div>
+              <div class="row">
+                <!-- LEFT BOOKING FORM -->
+                <div class="col-md-6">
+                  <div class="card container mb-3" style="border-color:#000000">
+                    <p style="font-size: 175%;"><b>Standard</b></p>
+                    <div class="form-group">
+
+                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
+                      <select name="Standard" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
+                      <select name="Standard" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
+                      <select name="Standard" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  <div class="card container" style="border-color:#000000">
+                    <p style="font-size: 175%;"><b>First Class</b></p>
+                    <div class="form-group">
+                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
+                      <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
+                      <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                        <option value="" class="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
+                      <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                        <option value="" class="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- END LEFT BOOKING FORM -->
+
+                <!-- RIGHT BOOKING FORM -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="form-group">
+                    <div class="form-group row" style="padding-top: 20px">
+                      <label for="Name" class="col-sm-3 col-form-label">Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Email" class="col-sm-3 col-form-label">Email</label>
+                      <div class="col-sm-9">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Mobile" class="col-sm-3 col-form-label">Mobile</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="CreditCard" class="col-sm-3 col-form-label">Credit Card</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputCard" placeholder="Credit Card" minlength="14"
+                          maxlength="19" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="Date" class="col-sm-3 col-form-label">Expiry</label>
+                      <div class="col-sm-9">
+                        <input type="Month" class="form-control" id="inputDate" name="birthday" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- END RIGHT BOOKING FORM -->
+
+
+              </div>
+              <!-- SUBMIT BTN -->
+              <div style="padding-top: 20px">
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>Total:</p>
+                  </div>
+                  <div class="col-md-6">
+                    <input class="btn btn-info" type="submit" value="Order" style="float:right">
+                  </div>
+                </div>
+              </div>
+              <!-- END SUBMIT BTN -->
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </form>
-  </article>
-  <!-- FOOTER -->
-  <footer style="background-color: #352f2f;">
+      </form>
+    </article>
+
+  </main>
+
+  <footer>
     <h3 class="text-center text-info" style="padding-top:10px; padding-bottom:10px;">CONTACT US </h3>
     <div class="container">
       <!-- UPPER FOOTER -->
@@ -525,7 +524,7 @@
               <ul class="list-unstyled footer-link">
                 <li><a href="#aboutus" class="text-info">About us</a></li>
                 <li><a href="#seating" class="text-info">Prices</a></li>
-                <li><a href="film" class="text-info">Now Showing</a></li>
+                <li><a href="#film" class="text-info">Now Showing</a></li>
 
               </ul>
         </div>
@@ -538,16 +537,13 @@
           <p>&copy;
             Copyright &copy;
             <script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by DUY &
-            TUONG <a class="text-info" href="https://" target="_blank">CINEMAX</a>
+            TUONG <a class="text-info" href="https://s3818381.github.io/duywp/a2/index.html" target="_blank">CINEMAX</a>
           </p>
         </div>
       </div>
     </div>
-    <!-- END LOWER FOOTER -->
-
+    <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
   </footer>
-
-
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -557,13 +553,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function(){
-        $('body').scrollspy({target: ".navbar", offset: 75});   
-      });
-      </script>
+  <script>
+    $(document).ready(function () {
+      $('body').scrollspy({ target: ".navbar", offset: 75 });
+    });
+  </script>
 </body>
-
-
 
 </html>
