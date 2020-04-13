@@ -47,7 +47,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#film">Film Showing</a>
-            <a class="dropdown-item" href="#Synopsis">Synopsis Area</a>
+            <a class="dropdown-item" href="#synopsis">Synopsis Area</a>
             <a class="dropdown-item" href="#Booking">Booking Area</a>
           </div>
         </li>
@@ -207,7 +207,8 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
-                    <a href="" class="stretched-link"></a>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Avengers');"></a>
+
                   </div>
                 </div>
               </div>
@@ -227,6 +228,7 @@
                     <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Wedding');"></a>
 
                   </div>
                 </div>
@@ -237,7 +239,7 @@
           <!-- end 1st row -->
 
           <!-- 2nd row -->
-
+          <!-- THIRD CARD -->
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -253,12 +255,14 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Dumbo');"></a>
 
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- FOURTH CARD -->
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -272,6 +276,7 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Prince');"></a>
 
                   </div>
                 </div>
@@ -285,16 +290,16 @@
     <!-- END NOW SHOWING -->
 
     <!-- SYNOPSIS PANEL -->
-    <article id="Synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f;">
+    <article id="synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f;">
       <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
       <div class="container card bg-light " style="border-color:#000000">
         <div class="card-body ">
-          <h1 class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
+          <h1 id="synopsisTitle" class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
           <hr class="style">
           <div class="row">
             <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
               <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
-              <p class="demoFont3" style="font-size: 18px">After the devastating events of Avengers: Infinity War
+              <p id="synopsisDescription" class="demoFont3" style="font-size: 18px; text-align: justify;">After the devastating events of Avengers: Infinity War
                 (2018),
                 the universe is in
                 ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
@@ -302,7 +307,7 @@
                 consequences may be in store, and no matter who they face...</p>
             </div>
             <div class="col-md-6 row justify-content-center ">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+              <iframe id="synopsisYoutube" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                 style="margin-left: 50px; padding-top: 20px"></iframe>
             </div>
@@ -546,6 +551,7 @@
     </div>
     <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
   </footer>
+  <script src="../a3/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
