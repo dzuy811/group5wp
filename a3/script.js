@@ -57,6 +57,8 @@ var movieList ={
 };
 // function show detail in SYNOPSIS PANEL
 function showDetail(key) {
+    // variables
+
     // Title +Rating
     document.getElementById('synopsisTitle').innerHTML= movieList[key].name  ;
     document.getElementById('synopsisRating').innerHTML= movieList[key].rating ;
@@ -66,7 +68,10 @@ function showDetail(key) {
     // btn Group
     var newBtnGroup = '<p style="padding-right:50px;  font-size: 20px">Making a book:</p>';
     for (const i in movieList[key].schedule) {
-        newBtnGroup += ' <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking">' + movieList[key].schedule[i].day +" - "+ movieList[key].schedule[i].time+" "+movieList[key].schedule[i].period  + '</a>';
+        let dayMovie = movieList[key].schedule[i].day ;
+        let timeMovie = movieList[key].schedule[i].time ;
+        let periodMovie= movieList[key].schedule[i].period ;
+        newBtnGroup += ' <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking">' +dayMovie +" - "+ timeMovie +" "+periodMovie + '</a>';
          
     }
     document.getElementById('sysnopisBtnGroup').innerHTML= newBtnGroup ;
