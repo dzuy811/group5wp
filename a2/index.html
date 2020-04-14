@@ -19,9 +19,10 @@
 <body>
 
   <header>
-    <div style="background-color: #000000;" class=" d-flex"> 
+    <div style="background-color: #000000;" class=" d-flex">
       <a href="index.html"><img src="media/Logo.jpg" width="75" height="75"></a>
-      <p style="font-size: 3vw; color: white;">Cinemax </p></div>
+      <p style="font-size: 3vw; color: white;">Cinemax </p>
+    </div>
   </header>
 
   <!-- NAVBAR -->
@@ -61,13 +62,13 @@
   </nav>
 
   <main>
-    
-      <video  no-controls autoplay loop muted width="100%">
-         <source src="media/FullHD.mp4" type="video/mp4">
-      </video>
-    
-    
-  
+
+    <video no-controls autoplay loop muted width="100%">
+      <source src="media/FullHD.mp4" type="video/mp4">
+    </video>
+
+
+
 
     <!-- ABOUT US -->
     <article id="aboutus" class="container-fluid text-white " style="padding-top:40px;">
@@ -294,12 +295,22 @@
       <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
       <div class="container card bg-light " style="border-color:#000000">
         <div class="card-body ">
-          <h1 id="synopsisTitle" class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
+          <!-- SYNOPSIS TITLE -->
+          <div class="row">
+            <div class="col-6">
+              <h1 id="synopsisTitle" class="text-monospace font-weight-bold">Avengers: Endgame</h1>
+            </div>
+            <div class="col-6">
+              <h1 id="synopsisRating" class="text-monospace font-weight-bold">PG-13</h1>
+            </div>
+          </div>
+          <!-- DESCRIPTION -->
           <hr class="style">
           <div class="row">
             <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
               <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
-              <p id="synopsisDescription" class="demoFont3" style="font-size: 18px; text-align: justify;">After the devastating events of Avengers: Infinity War
+              <p id="synopsisDescription" class="demoFont3" style="font-size: 18px; text-align: justify;">After the
+                devastating events of Avengers: Infinity War
                 (2018),
                 the universe is in
                 ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
@@ -307,20 +318,17 @@
                 consequences may be in store, and no matter who they face...</p>
             </div>
             <div class="col-md-6 row justify-content-center ">
-              <iframe id="synopsisYoutube" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-                style="margin-left: 50px; padding-top: 20px"></iframe>
+              <iframe id="synopsisYoutube" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="margin-left: 50px; padding-top: 20px"></iframe>
             </div>
             <div style="padding-top:30px">
               <div id="sysnopisBtnGroup" class="" data-toggle="buttons">
                 <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Wed - 9 pm </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Fri - 9 pm </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sat - 6 pm </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sun - 6 pm </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
-                <button type="button" class="btn btn-info" style="margin-bottom: 10px" disabled> Day - Hour </button>
+                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> WED - 9 P.M </a>
+                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> FRI - 9 P.M </a>
+                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SAT - 6 P.M </a>
+                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SUN - 6 P.M </a>
               </div>
             </div>
           </div>
@@ -332,8 +340,21 @@
       <form action="">
         <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
         <div class="container card bg-light " style="border-color:#000000">
-          <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE - DAY - TIME</h1>
+          <!-- BOOKING TITLE -->
+          <div class="row">
+            <div class="col-6">
+              <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE </h1>
+            </div>
+            <div class="col-3">
+              <h1 class="text-monospace font-weight-bold mt-3 ml-5"> DAY</h1>
+            </div>
+            <div class="col-3">
+              <h1 class="text-monospace font-weight-bold mt-3 ml-5">TIME</h1>
+            </div>
 
+
+          </div>
+          <!--END  BOOKING TITLE -->
           <div class="card-body">
             <div>
               <div class="row">
@@ -395,7 +416,7 @@
                     <div class="form-group">
                       <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
                       <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
-                        <option value="">Please Select</option>
+                        <option value="0">Please Select</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -410,7 +431,7 @@
                       <br>
                       <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
                       <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
-                        <option value="" class="">Please Select</option>
+                        <option value="0" class="">Please Select</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
