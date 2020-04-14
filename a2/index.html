@@ -325,7 +325,7 @@
             <div style="padding-top:30px">
               <div id="sysnopisBtnGroup" class="" data-toggle="buttons">
                 <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
-                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> WED - 9 P.M </a>
+                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" onclick="showBooking('aaa');" href="#Booking"> WED - 9 P.M </a>
                 <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> FRI - 9 P.M </a>
                 <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SAT - 6 P.M </a>
                 <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SUN - 6 P.M </a>
@@ -355,8 +355,9 @@
           <!--END  BOOKING TITLE -->
 
           <!-- HIDDEN INPUT of BOOKING  -->
-          <input type="text" id="" value="" name="" class="d-none">
-
+          <input type="text" id="movie-id" value="" name="movie[id]" class="d-none">
+          <input type="text" id="movie-day" value="" name="movie[day]" class="d-none">
+          <input type="text" id="movie-hour" value="" name="movie[hour]" class="d-none">
           <!-- END HIDDEN INPUT of BOOKING  -->
           <div class="card-body">
             <div>
