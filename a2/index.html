@@ -208,7 +208,7 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Avengers');"></a>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ACT');"></a>
 
                   </div>
                 </div>
@@ -229,7 +229,7 @@
                     <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Wedding');"></a>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('RMC');"></a>
 
                   </div>
                 </div>
@@ -256,7 +256,7 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Dumbo');"></a>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ANM');"></a>
 
                   </div>
                 </div>
@@ -277,7 +277,7 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('Prince');"></a>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('AHF');"></a>
 
                   </div>
                 </div>
@@ -325,10 +325,21 @@
             <div style="padding-top:30px">
               <div id="sysnopisBtnGroup" class="" data-toggle="buttons">
                 <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
-                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" onclick="showBooking('aaa');" href="#Booking"> WED - 9 P.M </a>
-                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> FRI - 9 P.M </a>
-                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SAT - 6 P.M </a>
-                <a  class="btn btn-info mr-3" style="margin-bottom: 10px" href="#Booking"> SUN - 6 P.M </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','WED','9 P.M','T21');" href="#Booking"> WED - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','THU','9 P.M','T21');" href="#Booking"> THU - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','FRI','9 P.M','T21');" href="#Booking"> FRI - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','SAT','6 P.M','T18');" href="#Booking"> SAT - 6 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','SUN','6 P.M','T18');" href="#Booking"> SUN - 6 P.M
+                </a>
               </div>
             </div>
           </div>
@@ -342,14 +353,14 @@
         <div class="container card bg-light " style="border-color:#000000">
           <!-- BOOKING TITLE -->
           <div class="row">
-            <div class="col-6">
-              <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE </h1>
+            <div class=" col-sm-12 col-md-6">
+              <h1 id="movie-title" class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE </h1>
             </div>
-            <div class="col-3">
-              <h1 class="text-monospace font-weight-bold mt-3 ml-5"> DAY</h1>
+            <div class="col-sm-12 col-md-3">
+              <h1 id="movie-title-day" class="text-monospace font-weight-bold mt-3 ml-5"> DAY</h1>
             </div>
-            <div class="col-3">
-              <h1 class="text-monospace font-weight-bold mt-3 ml-5">TIME</h1>
+            <div class="col-sm-12 col-md-3">
+              <h1 id="movie-title-time" class="text-monospace font-weight-bold mt-3 ml-5">TIME</h1>
             </div>
           </div>
           <!--END  BOOKING TITLE -->
@@ -367,101 +378,142 @@
                   <div class="card container mb-3" style="border-color:#000000">
                     <p style="font-size: 175%;"><b>Standard</b></p>
                     <div class="form-group">
+                      <!-- Standard -->
+                      <!-- Chair Adults -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label for="name" style="font-size: 150%;">Adults</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                            <option value="0">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- ChairsConcession -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
 
-                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
-                      <select name="Standard" id="ChairsAdult" class="btn btn-info dropdown-toggle">
-                        <option value="">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
-                      <br>
-                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
-                      <select name="Standard" id="ChairsConcession" class="btn btn-info dropdown-toggle">
-                        <option value="">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
-                      <br>
-                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
-                      <select name="Standard" id="ChairsChildren" class="btn btn-info dropdown-toggle">
-                        <option value="">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
+                          <label class="" for="email" style="font-size: 150%;">Concession</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                            <option value="0" class="">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- Chairs Children -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label class="" for="email" style="font-size: 150%;">Children</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                            <option value="" class="">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
                   <div class="card container" style="border-color:#000000">
                     <p style="font-size: 175%;"><b>First Class</b></p>
                     <div class="form-group">
-                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
-                      <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
-                        <option value="0">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
-                      <br>
-                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
-                      <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
-                        <option value="0" class="">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
-                      <br>
-                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
-                      <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
-                        <option value="" class="">Please Select</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                      </select>
+                      <!-- Chair Adults -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label for="name" style="font-size: 150%;">Adults</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                            <option value="0">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- ChairsConcession -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+
+                          <label class="" for="email" style="font-size: 150%;">Concession</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                            <option value="0" class="">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- Chairs Children -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label class="" for="email" style="font-size: 150%;">Children</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                            <option value="" class="">Please Select</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                          </select>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -510,10 +562,19 @@
               <!-- SUBMIT BTN -->
               <div style="padding-top: 20px">
                 <div class="row">
-                  <div class="col-md-6">
-                    <p>Total:</p>
+                  <div class="col-md-3">
+                    <p style="font-size: 30px; float: right;">Total:</p>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-3">
+                    <div
+                      style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;">
+
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+
+                  </div>
+                  <div class="col-md-2">
                     <input class="btn btn-info" type="submit" value="Order" style="float:right">
                   </div>
                 </div>

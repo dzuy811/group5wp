@@ -1,6 +1,6 @@
 //  LIST OF MOVIES
 var movieList ={
-    Avengers:{
+    ACT:{
         "id":"ACT",
         "name":"Avengers: Endgame",
         "rating":"PG-13",
@@ -14,7 +14,7 @@ var movieList ={
             { "day":"SUN","time":"6 P.M","period":"T18" }
         ]
     },
-    Wedding:{
+    RMC:{
         "id":"RMC",
         "name":"Top End Wedding",
         "rating":"M",
@@ -27,7 +27,7 @@ var movieList ={
             { "day":"SUN","time":"3 P.M","period":"T15" }
         ]
     },
-    Dumbo:{
+    ANM:{
         "id":"ANM",
         "name":"Dumbo",
         "rating":"PG",
@@ -43,7 +43,7 @@ var movieList ={
             { "day":"SUN","time":"12 P.M","period":"T12" }
         ]
     },
-    Prince:{
+    AHF:{
         "id":"AHF",
         "name":"The Happy Prince",
         "rating":"R",
@@ -79,7 +79,41 @@ function showDetail(key) {
     }
     document.getElementById('sysnopisBtnGroup').innerHTML= newBtnGroup ;
 }
+
 // function show detail in BOOKING FORM
 function showBooking(movie_id,movie_name,movie_day,movie_time,movie_period) {
-    console.log(movie_id,movie_name,movie_day,movie_time,movie_period);
+    // change the title of BOOKING FORM    
+    document.getElementById('movie-title').innerHTML= movie_name;
+    document.getElementById('movie-title-day').innerHTML= changeDay(movie_day);
+    document.getElementById('movie-title-time').innerHTML= movie_time;
+    // change the HIDDEN INPUT of BOOKING
+    document.getElementById('movie-id').value= movie_id;
+    document.getElementById('movie-day').value= movie_day;
+    document.getElementById('movie-hour').value= movie_period;
+    console.log(document.getElementById('movie-id').value,document.getElementById('movie-day').value,document.getElementById('movie-hour').value);
+}
+// function change to full day
+function changeDay(movie_day) {
+   
+    if (movie_day == 'MON') {       
+        return 'MONDAY';
+    }
+    if (movie_day == 'TUE') {       
+        return 'TUESDAY';
+    }
+    if (movie_day == 'WED') {       
+        return 'WEDNESDAY';
+    }
+    if (movie_day == 'THU') {       
+        return 'THURSDAY';
+    }
+    if (movie_day == 'FRI') {       
+        return 'FRIDAY';
+    }
+    if (movie_day == 'SAT') {       
+        return 'SATURDAY';
+    }
+    if (movie_day == 'SUN') {       
+        return 'SUNDAY';
+    }
 }
