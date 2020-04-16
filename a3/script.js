@@ -128,6 +128,22 @@ function calPrice() {
     let seatsFCA= checkIsInt(document.getElementById("seats-FCA").value); 
     let seatsFCP= checkIsInt(document.getElementById("seats-FCP").value);
     let seatsFCC= checkIsInt(document.getElementById("seats-FCC").value);
+    // Get film info
+    let movie_day= document.getElementById("movie-day").value;
+    let movie_hour= document.getElementById("movie-hour").value;
+    // Check discount
+    if (movie_hour == 'T12' && (movie_day != 'SAT' && movie_day != 'SUN')) {
+        console.log('yes, at 12 pm')
+    } else {
+        if((movie_day == 'MON' || movie_day == 'WED') && movie_hour != 'T12' ){
+            console.log('yes, MON && WED');
+        }
+        else{
+            console.log('NO');
+        }
+    }
+    
+
     //total   
     let total = seatsSTA + seatsSTP + seatsSTC + seatsFCA + seatsFCP +seatsFCC;
     document.getElementById('total').innerHTML= total;
