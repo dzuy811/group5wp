@@ -90,7 +90,8 @@ function showBooking(movie_id,movie_name,movie_day,movie_time,movie_period) {
     document.getElementById('movie-id').value= movie_id;
     document.getElementById('movie-day').value= movie_day;
     document.getElementById('movie-hour').value= movie_period;
-    console.log(document.getElementById('movie-id').value,document.getElementById('movie-day').value,document.getElementById('movie-hour').value);
+    // add Event to Select
+    addEventtoAllSelect();
 }
 // function change to full day
 function changeDay(movie_day) {
@@ -117,3 +118,25 @@ function changeDay(movie_day) {
         return 'SUNDAY';
     }
 }
+// function calculate prices
+function calPrice() {
+    // STANDARD
+    let seatsSTA= document.getElementById("seats-STA").value;
+    let seatsSTP= document.getElementById("seats-STP").value;  
+    let seatsSTC= document.getElementById("seats-STC").value;
+    // FIRST CLASS  
+    let seatsFCA= document.getElementById("seats-FCA").value;  
+    let seatsFCP= document.getElementById("seats-FCP").value;  
+    let seatsFCC= document.getElementById("seats-FCC").value;
+    //total
+    let total = seatsSTA + seatsSTP + seatsSTC + seatsFCA + seatsFCP +seatsFCC;
+    document.getElementById('total').innerHTML= total;
+}
+// add EVENT to all SELECT
+function addEventtoAllSelect() {
+    x = document.querySelectorAll("select");
+  for (i = 0; i < x.length; i++) {
+    x[i].addEventListener("change", calPrice);
+  }   
+}
+
