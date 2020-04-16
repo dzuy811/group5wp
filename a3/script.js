@@ -121,14 +121,14 @@ function changeDay(movie_day) {
 // function calculate prices
 function calPrice() {
     // STANDARD
-    let seatsSTA= document.getElementById("seats-STA").value;
-    let seatsSTP= document.getElementById("seats-STP").value;  
-    let seatsSTC= document.getElementById("seats-STC").value;
+    let seatsSTA= checkIsInt(document.getElementById("seats-STA").value);
+    let seatsSTP= checkIsInt(document.getElementById("seats-STP").value);  
+    let seatsSTC= checkIsInt(document.getElementById("seats-STC").value); 
     // FIRST CLASS  
-    let seatsFCA= document.getElementById("seats-FCA").value;  
-    let seatsFCP= document.getElementById("seats-FCP").value;  
-    let seatsFCC= document.getElementById("seats-FCC").value;
-    //total
+    let seatsFCA= checkIsInt(document.getElementById("seats-FCA").value); 
+    let seatsFCP= checkIsInt(document.getElementById("seats-FCP").value);
+    let seatsFCC= checkIsInt(document.getElementById("seats-FCC").value);
+    //total   
     let total = seatsSTA + seatsSTP + seatsSTC + seatsFCA + seatsFCP +seatsFCC;
     document.getElementById('total').innerHTML= total;
 }
@@ -139,4 +139,7 @@ function addEventtoAllSelect() {
     x[i].addEventListener("change", calPrice);
   }   
 }
-
+// check is a NUM if true return this num, else return 0
+function checkIsInt(tmp) {
+     return e = (Number.isInteger(parseInt(tmp))) ? parseInt(tmp) : parseInt(0);
+}
