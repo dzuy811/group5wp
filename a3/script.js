@@ -131,22 +131,35 @@ function calPrice() {
     // Get film info
     let movie_day= document.getElementById("movie-day").value;
     let movie_hour= document.getElementById("movie-hour").value;
-    // Check discount
+    //total   
+    let total = seatsSTA * 19.80 + seatsSTP * 17.50 + seatsSTC *15.30 + seatsFCA*30.00 + seatsFCP*27.00 +seatsFCC*24.00;
+    let total_discounted = seatsSTA *14.00 + seatsSTP * 12.50 + seatsSTC *11.00 + seatsFCA*24.00 + seatsFCP*22.50 +seatsFCC*21.00;
+    document.getElementById('total').innerHTML= "$"+ total.toFixed(2);
+    // Check discount 
+    // Check T12  
     if (movie_hour == 'T12' && (movie_day != 'SAT' && movie_day != 'SUN')) {
-        console.log('yes, at 12 pm')
+            document.getElementById('total-discounted').innerHTML= "$"+ total_discounted.toFixed(2);
+            document.getElementById('note').innerHTML= 'Discount at 12pm on weekdays'; 
+            document.getElementById("total").style.textDecoration = "line-through";
+            // put total into input
+            document.getElementById('total-price').value= total_discounted;
     } else {
+        // check MON && WED
         if((movie_day == 'MON' || movie_day == 'WED') && movie_hour != 'T12' ){
-            console.log('yes, MON && WED');
+            document.getElementById('total-discounted').innerHTML= "$"+ total_discounted.toFixed(2);
+            document.getElementById('note').innerHTML= 'Discount for All day Monday and Wednesday';
+            document.getElementById("total").style.textDecoration = "line-through";
+            // put total into input
+            document.getElementById('total-price').value= total_discounted; 
         }
         else{
-            console.log('NO');
+            //console.log('NO discount');
+            document.getElementById('total-price').value= total;
         }
     }
     
 
-    //total   
-    let total = seatsSTA + seatsSTP + seatsSTC + seatsFCA + seatsFCP +seatsFCC;
-    document.getElementById('total').innerHTML= total;
+    
 }
 // add EVENT to all SELECT
 function addEventtoAllSelect() {
