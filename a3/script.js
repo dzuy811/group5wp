@@ -142,7 +142,7 @@ function calPrice() {
             document.getElementById('note').innerHTML= 'Discount at 12pm on weekdays'; 
             document.getElementById("total").style.textDecoration = "line-through";
             // put total into input
-            document.getElementById('total-price').value= total_discounted;
+            document.getElementById('total-price').value= total_discounted.toFixed(2);
     } else {
         // check MON && WED
         if((movie_day == 'MON' || movie_day == 'WED') && movie_hour != 'T12' ){
@@ -150,11 +150,11 @@ function calPrice() {
             document.getElementById('note').innerHTML= 'Discount for All day Monday and Wednesday';
             document.getElementById("total").style.textDecoration = "line-through";
             // put total into input
-            document.getElementById('total-price').value= total_discounted; 
+            document.getElementById('total-price').value= total_discounted.toFixed(2); 
         }
         else{
             //console.log('NO discount');
-            document.getElementById('total-price').value= total;
+            document.getElementById('total-price').value= total.toFixed(2);
         }
     }
     
