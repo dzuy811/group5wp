@@ -1,174 +1,245 @@
 //  LIST OF MOVIES
-var movieList ={
-    ACT:{
-        "id":"ACT",
-        "name":"Avengers: Endgame",
-        "rating":"PG-13",
-        "description":"After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...",
-        "link":"https://www.youtube.com/embed/TcMBFSGVi1c",
-        "schedule": [
-            { "day":"WED","time":"9 P.M","period":"T21" },
-            { "day":"THU","time":"9 P.M","period":"T21" },
-            { "day":"FRI","time":"9 P.M","period":"T21" },
-            { "day":"SAT","time":"6 P.M","period":"T18" },
-            { "day":"SUN","time":"6 P.M","period":"T18" }
-        ]
+var movieList = {
+    ACT: {
+        id: "ACT",
+        name: "Avengers: Endgame",
+        rating: "PG-13",
+        description:
+            "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face...",
+        link: "https://www.youtube.com/embed/TcMBFSGVi1c",
+        schedule: [
+            { day: "WED", time: "9 P.M", period: "T21" },
+            { day: "THU", time: "9 P.M", period: "T21" },
+            { day: "FRI", time: "9 P.M", period: "T21" },
+            { day: "SAT", time: "6 P.M", period: "T18" },
+            { day: "SUN", time: "6 P.M", period: "T18" },
+        ],
     },
-    RMC:{
-        "id":"RMC",
-        "name":"Top End Wedding",
-        "rating":"M",
-        "description":"Lauren and Ned are engaged, they are in love, and they have just ten days to find Lauren's mother who has gone AWOL somewhere in the remote far north of Australia, reunite her parents and pull off their dream wedding.",
-        "link":"https://www.youtube.com/embed/uoDBvGF9pPU",
-        "schedule": [
-            { "day":"MON","time":"6 P.M","period":"T18" },
-            { "day":"TUE","time":"6 P.M","period":"T18" },
-            { "day":"SAT","time":"3 P.M","period":"T15" },
-            { "day":"SUN","time":"3 P.M","period":"T15" }
-        ]
+    RMC: {
+        id: "RMC",
+        name: "Top End Wedding",
+        rating: "M",
+        description:
+            "Lauren and Ned are engaged, they are in love, and they have just ten days to find Lauren's mother who has gone AWOL somewhere in the remote far north of Australia, reunite her parents and pull off their dream wedding.",
+        link: "https://www.youtube.com/embed/uoDBvGF9pPU",
+        schedule: [
+            { day: "MON", time: "6 P.M", period: "T18" },
+            { day: "TUE", time: "6 P.M", period: "T18" },
+            { day: "SAT", time: "3 P.M", period: "T15" },
+            { day: "SUN", time: "3 P.M", period: "T15" },
+        ],
     },
-    ANM:{
-        "id":"ANM",
-        "name":"Dumbo",
-        "rating":"PG",
-        "description":"A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.",
-        "link":"https://www.youtube.com/embed/7NiYVoqBt-8",
-        "schedule": [
-            { "day":"MON","time":"12 P.M","period":"T12" },
-            { "day":"TUE","time":"12 P.M","period":"T12" },
-            { "day":"WED","time":"6 P.M","period":"T18" },
-            { "day":"THU","time":"6 P.M","period":"T18" },
-            { "day":"FRI","time":"6 P.M","period":"T18" },
-            { "day":"SAT","time":"12 P.M","period":"T12" },
-            { "day":"SUN","time":"12 P.M","period":"T12" }
-        ]
+    ANM: {
+        id: "ANM",
+        name: "Dumbo",
+        rating: "PG",
+        description:
+            "A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.",
+        link: "https://www.youtube.com/embed/7NiYVoqBt-8",
+        schedule: [
+            { day: "MON", time: "12 P.M", period: "T12" },
+            { day: "TUE", time: "12 P.M", period: "T12" },
+            { day: "WED", time: "6 P.M", period: "T18" },
+            { day: "THU", time: "6 P.M", period: "T18" },
+            { day: "FRI", time: "6 P.M", period: "T18" },
+            { day: "SAT", time: "12 P.M", period: "T12" },
+            { day: "SUN", time: "12 P.M", period: "T12" },
+        ],
     },
-    AHF:{
-        "id":"AHF",
-        "name":"The Happy Prince",
-        "rating":"R",
-        "description":"The untold story of the last days in the tragic times of Oscar Wilde, a person who observes his own failure with ironic distance and regards the difficulties that beset his life with detachment and humor.",
-        "link":"https://www.youtube.com/embed/4HmN9r1Fcr8",
-        "schedule": [          
-            { "day":"WED","time":"12 P.M","period":"T12" },
-            { "day":"THU","time":"12 P.M","period":"T12" },
-            { "day":"FRI","time":"12 P.M","period":"T12" },
-            { "day":"SAT","time":"9 P.M","period":"T21" },
-            { "day":"SUN","time":"9 P.M","period":"T21" }
-        ]
-    }
+    AHF: {
+        id: "AHF",
+        name: "The Happy Prince",
+        rating: "R",
+        description:
+            "The untold story of the last days in the tragic times of Oscar Wilde, a person who observes his own failure with ironic distance and regards the difficulties that beset his life with detachment and humor.",
+        link: "https://www.youtube.com/embed/4HmN9r1Fcr8",
+        schedule: [
+            { day: "WED", time: "12 P.M", period: "T12" },
+            { day: "THU", time: "12 P.M", period: "T12" },
+            { day: "FRI", time: "12 P.M", period: "T12" },
+            { day: "SAT", time: "9 P.M", period: "T21" },
+            { day: "SUN", time: "9 P.M", period: "T21" },
+        ],
+    },
 };
 // function show detail in SYNOPSIS PANEL
 function showDetail(key) {
     // variables
-    let movie_id =movieList[key].id;
-    let movie_name =movieList[key].name;
+    let movie_id = movieList[key].id;
+    let movie_name = movieList[key].name;
     // Title +Rating
-    document.getElementById('synopsisTitle').innerHTML= movieList[key].name  ;
-    document.getElementById('synopsisRating').innerHTML= movieList[key].rating ;
+    document.getElementById("synopsisTitle").innerHTML = movieList[key].name;
+    document.getElementById("synopsisRating").innerHTML = movieList[key].rating;
     // Description + Youtube
-    document.getElementById('synopsisDescription').innerHTML= movieList[key].description ;
-    document.getElementById('synopsisYoutube').src= movieList[key].link ;
+    document.getElementById("synopsisDescription").innerHTML =
+        movieList[key].description;
+    document.getElementById("synopsisYoutube").src = movieList[key].link;
     // btn Group
-    var newBtnGroup = '<p style="padding-right:50px;  font-size: 20px">Making a book:</p>';
+    var newBtnGroup =
+        '<p style="padding-right:50px;  font-size: 20px">Making a book:</p>';
     for (const i in movieList[key].schedule) {
-        let movie_day = movieList[key].schedule[i].day ;
-        let movie_time = movieList[key].schedule[i].time ;
-        let movie_period= movieList[key].schedule[i].period ;
-        newBtnGroup += ' <a  class="btn btn-info mr-3" style="margin-bottom: 10px" onclick="showBooking(\''+movie_id +'\',\''+ movie_name +'\',\''+ movie_day +'\',\''+ movie_time +'\',\''+movie_period  + '\');" href="#Booking">' +movie_day +" - "+ movie_time +'</a>';       
+        let movie_day = movieList[key].schedule[i].day;
+        let movie_time = movieList[key].schedule[i].time;
+        let movie_period = movieList[key].schedule[i].period;
+        newBtnGroup +=
+            ' <a  class="btn btn-info mr-3" style="margin-bottom: 10px" onclick="showBooking(\'' +
+            movie_id +
+            "','" +
+            movie_name +
+            "','" +
+            movie_day +
+            "','" +
+            movie_time +
+            "','" +
+            movie_period +
+            '\');" href="#Booking">' +
+            movie_day +
+            " - " +
+            movie_time +
+            "</a>";
     }
-    document.getElementById('sysnopisBtnGroup').innerHTML= newBtnGroup ;
+    document.getElementById("sysnopisBtnGroup").innerHTML = newBtnGroup;
 }
 
 // function show detail in BOOKING FORM
-function showBooking(movie_id,movie_name,movie_day,movie_time,movie_period) {
-    // change the title of BOOKING FORM    
-    document.getElementById('movie-title').innerHTML= movie_name;
-    document.getElementById('movie-title-day').innerHTML= changeDay(movie_day);
-    document.getElementById('movie-title-time').innerHTML= movie_time;
+function showBooking(
+    movie_id,
+    movie_name,
+    movie_day,
+    movie_time,
+    movie_period
+) {
+    // change the title of BOOKING FORM
+    document.getElementById("movie-title").innerHTML = movie_name;
+    document.getElementById("movie-title-day").innerHTML = changeDay(movie_day);
+    document.getElementById("movie-title-time").innerHTML = movie_time;
     // change the HIDDEN INPUT of BOOKING
-    document.getElementById('movie-id').value= movie_id;
-    document.getElementById('movie-day').value= movie_day;
-    document.getElementById('movie-hour').value= movie_period;
+    document.getElementById("movie-id").value = movie_id;
+    document.getElementById("movie-day").value = movie_day;
+    document.getElementById("movie-hour").value = movie_period;
     // add Event to Select
     addEventtoAllSelect();
 }
 // function change to full day
 function changeDay(movie_day) {
-   
-    if (movie_day == 'MON') {       
-        return 'MONDAY';
+    if (movie_day == "MON") {
+        return "MONDAY";
     }
-    if (movie_day == 'TUE') {       
-        return 'TUESDAY';
+    if (movie_day == "TUE") {
+        return "TUESDAY";
     }
-    if (movie_day == 'WED') {       
-        return 'WEDNESDAY';
+    if (movie_day == "WED") {
+        return "WEDNESDAY";
     }
-    if (movie_day == 'THU') {       
-        return 'THURSDAY';
+    if (movie_day == "THU") {
+        return "THURSDAY";
     }
-    if (movie_day == 'FRI') {       
-        return 'FRIDAY';
+    if (movie_day == "FRI") {
+        return "FRIDAY";
     }
-    if (movie_day == 'SAT') {       
-        return 'SATURDAY';
+    if (movie_day == "SAT") {
+        return "SATURDAY";
     }
-    if (movie_day == 'SUN') {       
-        return 'SUNDAY';
+    if (movie_day == "SUN") {
+        return "SUNDAY";
     }
 }
 // function calculate prices
 function calPrice() {
     // STANDARD
-    let seatsSTA= checkIsInt(document.getElementById("seats-STA").value);
-    let seatsSTP= checkIsInt(document.getElementById("seats-STP").value);  
-    let seatsSTC= checkIsInt(document.getElementById("seats-STC").value); 
-    // FIRST CLASS  
-    let seatsFCA= checkIsInt(document.getElementById("seats-FCA").value); 
-    let seatsFCP= checkIsInt(document.getElementById("seats-FCP").value);
-    let seatsFCC= checkIsInt(document.getElementById("seats-FCC").value);
+    let seatsSTA = checkIsInt(document.getElementById("seats-STA").value);
+    let seatsSTP = checkIsInt(document.getElementById("seats-STP").value);
+    let seatsSTC = checkIsInt(document.getElementById("seats-STC").value);
+    // FIRST CLASS
+    let seatsFCA = checkIsInt(document.getElementById("seats-FCA").value);
+    let seatsFCP = checkIsInt(document.getElementById("seats-FCP").value);
+    let seatsFCC = checkIsInt(document.getElementById("seats-FCC").value);
     // Get film info
-    let movie_day= document.getElementById("movie-day").value;
-    let movie_hour= document.getElementById("movie-hour").value;
-    //total   
-    let total = seatsSTA * 19.80 + seatsSTP * 17.50 + seatsSTC *15.30 + seatsFCA*30.00 + seatsFCP*27.00 +seatsFCC*24.00;
-    let total_discounted = seatsSTA *14.00 + seatsSTP * 12.50 + seatsSTC *11.00 + seatsFCA*24.00 + seatsFCP*22.50 +seatsFCC*21.00;
-    document.getElementById('total').innerHTML= "$"+ total.toFixed(2);
-    // Check discount 
-    // Check T12  
-    if (movie_hour == 'T12' && (movie_day != 'SAT' && movie_day != 'SUN')) {
-            document.getElementById('total-discounted').innerHTML= "$"+ total_discounted.toFixed(2);
-            document.getElementById('note').innerHTML= 'Discount at 12pm on weekdays'; 
-            document.getElementById("total").style.textDecoration = "line-through";
-            // put total into input
-            document.getElementById('total-price').value= total_discounted.toFixed(2);
+    let movie_day = document.getElementById("movie-day").value;
+    let movie_hour = document.getElementById("movie-hour").value;
+    //total
+    let total =
+        seatsSTA * 19.8 +
+        seatsSTP * 17.5 +
+        seatsSTC * 15.3 +
+        seatsFCA * 30.0 +
+        seatsFCP * 27.0 +
+        seatsFCC * 24.0;
+    let total_discounted =
+        seatsSTA * 14.0 +
+        seatsSTP * 12.5 +
+        seatsSTC * 11.0 +
+        seatsFCA * 24.0 +
+        seatsFCP * 22.5 +
+        seatsFCC * 21.0;
+    document.getElementById("total").innerHTML = "$" + total.toFixed(2);
+    // Check discount
+    // Check T12
+    if (movie_hour == "T12" && movie_day != "SAT" && movie_day != "SUN") {
+        document.getElementById("total-discounted").innerHTML =
+            "$" + total_discounted.toFixed(2);
+        document.getElementById("note").innerHTML = "Discount at 12pm on weekdays";
+        document.getElementById("total").style.textDecoration = "line-through";
+        // put total into input
+        document.getElementById("total-price").value = total_discounted.toFixed(2);
     } else {
         // check MON && WED
-        if((movie_day == 'MON' || movie_day == 'WED') && movie_hour != 'T12' ){
-            document.getElementById('total-discounted').innerHTML= "$"+ total_discounted.toFixed(2);
-            document.getElementById('note').innerHTML= 'Discount for All day Monday and Wednesday';
+        if ((movie_day == "MON" || movie_day == "WED") && movie_hour != "T12") {
+            document.getElementById("total-discounted").innerHTML =
+                "$" + total_discounted.toFixed(2);
+            document.getElementById("note").innerHTML =
+                "Discount for All day Monday and Wednesday";
             document.getElementById("total").style.textDecoration = "line-through";
             // put total into input
-            document.getElementById('total-price').value= total_discounted.toFixed(2); 
-        }
-        else{
+            document.getElementById("total-price").value = total_discounted.toFixed(
+                2
+            );
+        } else {
             //console.log('NO discount');
-            document.getElementById('total-price').value= total.toFixed(2);
+            document.getElementById("total-price").value = total.toFixed(2);
         }
     }
-    
-
-    
 }
 // add EVENT to all SELECT
 function addEventtoAllSelect() {
     x = document.querySelectorAll("select");
-  for (i = 0; i < x.length; i++) {
-    x[i].addEventListener("change", calPrice);
-  }   
+    for (i = 0; i < x.length; i++) {
+        x[i].addEventListener("change", calPrice);
+    }
 }
 // check is a NUM if true return this num, else return 0
 function checkIsInt(tmp) {
-     return e = (Number.isInteger(parseInt(tmp))) ? parseInt(tmp) : parseInt(0);
+    return (e = Number.isInteger(parseInt(tmp)) ? parseInt(tmp) : parseInt(0));
+}
+
+// check the INPUT of right booking form by RegEx
+function checkInput(val) {
+    name = document.getElementById(val).value;
+    id_val = document.getElementById(val);
+    // Get pattern from Name
+    if (val == "cust-name") var patt = /^[a-zA-Z\,-.' ?]{1,100}$/;
+
+    // Get pattern from Email
+    if (val == "cust-email")
+        var patt = /^[a-z][a-z0-9_\.]{1,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
+
+    // Get pattern from Mobile
+    if (val == "cust-mobile") var patt = /^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$/;
+
+    // Get pattern from Card
+    if (val == "cust-card")
+        var patt = /^\d{4}[ ]?\d{4}[ ]?\d{4}[ ]?\d{1,4}[ ]?\d{0,3}?$/;
+
+    // Check the value by regEx
+    if (!patt.test(name)) {
+        id_val.style.border = "2px red solid";
+        id_val.style.background = "rgb(255, 238, 238)";
+        // id_val.classList.add("invalid");
+        // id_val.classList.remove("valid");
+    } else {
+        // id_val.classList.add("valid");
+        // id_val.classList.remove("invalid");
+        id_val.style.border = "2px green solid";
+        id_val.style.background = "#FFFFFF";
+    }
 }

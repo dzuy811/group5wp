@@ -349,7 +349,8 @@
     <!-- Booking Area -->
     <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
       <!-- <form action=""> -->
-      <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="POST" target="blank" name="Bookingform">
+      <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="POST" target="blank"
+        name="Bookingform">
         <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
         <div class="container card bg-light " style="border-color:#000000">
           <!-- BOOKING TITLE -->
@@ -409,7 +410,7 @@
                           <label class="" for="seats-STP" style="font-size: 150%;">Concession</label>
                         </div>
                         <div class="col d-flex justify-content-center">
-                          <select name="seats[STP]" id="seats-STP" class="btn btn-info dropdown-toggle" >
+                          <select name="seats[STP]" id="seats-STP" class="btn btn-info dropdown-toggle">
                             <option value="">Please Select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -527,32 +528,39 @@
                     <div class="form-group row" style="padding-top: 20px">
                       <label for="cust-name" class="col-sm-3 col-form-label">Name</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="cust[name]" id="cust-name" placeholder="Name" required>
+                        <input type="text" class="form-control" name="cust[name]" id="cust-name"
+                          pattern="^[a-zA-Z\,-.' ?]{1,100}$" placeholder="Name" onblur="checkInput('cust-name');"
+                          required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="cust-email" class="col-sm-3 col-form-label">Email</label>
                       <div class="col-sm-9">
-                        <input type="email" class="form-control" name="cust[email]" id="cust-email" placeholder="Email" required>
+                        <input type="text" class="form-control" name="cust[email]" id="cust-email" placeholder="Email"
+                          pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"
+                          onblur="checkInput('cust-email');" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="cust-mobile" class="col-sm-3 col-form-label">Mobile</label>
                       <div class="col-sm-9">
-                        <input type="tel" class="form-control" name="cust[mobile]" id="cust-mobile" placeholder="Mobile" required>
+                        <input type="tel" class="form-control" name="cust[mobile]" id="cust-mobile"
+                          pattern="^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$" placeholder="Mobile"
+                          onblur="checkInput('cust-mobile');" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="cust-card" class="col-sm-3 col-form-label">Credit Card</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="cust[card]" id="cust-card" placeholder="Credit Card" minlength="14"
-                          maxlength="19" required>
+                        <input type="text" class="form-control" name="cust[card]" id="cust-card"
+                          pattern="^\d{4}[ ]?\d{4}[ ]?\d{4}[ ]?\d{1,4}[ ]?\d{0,3}?$" placeholder="Credit Card"
+                          onblur="checkInput('cust-card');" required>
                       </div>
                     </div>
                     <div class="form-group row">
                       <label for="cust-expiry" class="col-sm-3 col-form-label">Expiry</label>
                       <div class="col-sm-9">
-                        <input type="Month" class="form-control" name="cust[expiry]" id="cust-expiry"  required>
+                        <input type="Month" class="form-control" name="cust[expiry]" id="cust-expiry" required>
                       </div>
                     </div>
                   </div>
@@ -568,16 +576,18 @@
                     <p style="font-size: 30px;">Total:</p>
                   </div>
                   <div class="col-md-4">
-                    <div style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;" class="d-flex align-content-center justify-content-center" >
-                        <p id="total"  style="font-size: 30px;" class="pr-3"></p>
-                        <p id="total-discounted"  style="font-size: 30px; color: tomato;"></p>
+                    <div
+                      style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
+                      class="d-flex align-content-center justify-content-center">
+                      <p id="total" style="font-size: 30px;" class="pr-3"></p>
+                      <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
                     </div>
                   </div>
-                  <div class="col-md-5 d-flex align-self-center justify-content-center">                        
-                        <p id="note" style="font-size: 120%; color: tomato;"></p>
+                  <div class="col-md-5 d-flex align-self-center justify-content-center">
+                    <p id="note" style="font-size: 120%; color: tomato;"></p>
                   </div>
                   <div class="col-md-1  d-flex align-self-center justify-content-end">
-                    <input class="btn btn-info" type="submit" value="Order" >
+                    <input class="btn btn-info" type="submit" value="Order">
                   </div>
                 </div>
               </div>
