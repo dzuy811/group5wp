@@ -66,6 +66,7 @@ var movieList = {
 
 // function show detail in SYNOPSIS PANEL
 function showDetail(key) {
+    resetForm();
     // variables
     let movie_id = movieList[key].id;
     let movie_name = movieList[key].name;
@@ -105,13 +106,8 @@ function showDetail(key) {
 
 
 // function show detail in BOOKING FORM
-function showBooking(
-    movie_id,
-    movie_name,
-    movie_day,
-    movie_time,
-    movie_period
-) {
+function showBooking(movie_id,movie_name,movie_day,movie_time,movie_period) {
+    resetForm();
     // change the title of BOOKING FORM
     document.getElementById("movie-title").innerHTML = movie_name;
     document.getElementById("movie-title-day").innerHTML = changeDay(movie_day);
@@ -207,7 +203,17 @@ function calPrice() {
         }
     }
 }
-
+// reset form Function
+function resetForm() {
+    document.getElementById("booking-form").reset();
+    document.getElementById("total").innerHTML = "";
+    document.getElementById("note").innerHTML="";
+    document.getElementById("total-discounted").innerHTML ="";
+    // reset title
+    document.getElementById("movie-title").innerHTML = "MOVIE TITLE";
+    document.getElementById("movie-title-day").innerHTML = "DAY";
+    document.getElementById("movie-title-time").innerHTML = "TIME";
+}
 
 // add EVENT to all SELECT
 function addEventToAllSelect() {
@@ -301,8 +307,15 @@ function enableButton() {
             count = 0;
         }
     };
+    // Check whether movie is chosen or not   
+    if(document.getElementById('movie-id').value ==""){
+        count=0;
+    } else {
+        count+=1;
+    }
+    
     // Enabled the submit button. If not, remain disabled  
-    if (count == 5) {
+    if (count == 6) {
         document.getElementById("submit_button").removeAttribute("disabled");
     } else {
         if (!document.getElementById("submit_button").hasAttribute("disabled")) {
@@ -310,3 +323,4 @@ function enableButton() {
         }
     }
 }
+
