@@ -246,14 +246,14 @@ function checkInput(val) {
 
     // Check the value by regEx
     if (!patt.test(name)) {
-        id_val.style.border = "2px red solid";
+        id_val.style.border = "2px solid red";
         id_val.style.background = "rgb(255, 238, 238)";
         // id_val.classList.add("invalid");
         // id_val.classList.remove("valid");
     } else {
         // id_val.classList.add("valid");
         // id_val.classList.remove("invalid");
-        id_val.style.border = "2px green solid";
+        id_val.style.border = "2px solid green";
         id_val.style.background = "#FFFFFF";
     }
 }
@@ -270,20 +270,43 @@ function checkExpiry() {
     var current_time = new Date();
     // Check the expiry and current time
     if (year > current_time.getFullYear()) {
-        id_expiry.style.border = "2px green solid";
+        id_expiry.style.border = "2px solid green";
         id_expiry.style.background = "#FFFFFF";
     }
     if (year < current_time.getFullYear()) {
-        id_expiry.style.border = "2px red solid";
+        id_expiry.style.border = "2px solid red";
         id_expiry.style.background = "rgb(255, 238, 238)";
     }
     if (year == current_time.getFullYear()) {
         if (month >= (current_time.getMonth() + 1)) {
-            id_expiry.style.border = "2px green solid";
+            id_expiry.style.border = "2px solid green";
             id_expiry.style.background = "#FFFFFF";
         } else {
-            id_expiry.style.border = "2px red solid";
+            id_expiry.style.border = "2px solid red";
             id_expiry.style.background = "rgb(255, 238, 238)";
+        }
+    }
+}
+
+
+// Enabled the button if requirements are ALL correct
+function enableButton() {
+    var count = 0;
+    var id_form = ["cust-name", "cust-mobile", "cust-card", "cust-email", "cust-expiry"];
+    // Check if ALL inputs are CORRECT
+    for (var i = 0; i < id_form.length; i++) {
+        if (document.getElementById(id_form[i]).style.border == "2px solid green") {
+            count += 1;
+        } else {
+            count = 0;
+        }
+    };
+    // Enabled the submit button. If not, remain disabled  
+    if (count == 5) {
+        document.getElementById("submit_button").removeAttribute("disabled");
+    } else {
+        if (!document.getElementById("submit_button").hasAttribute("disabled")) {
+            document.getElementById("submit_button").setAttribute("disabled", true);
         }
     }
 }

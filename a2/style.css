@@ -104,12 +104,12 @@ hr.style-white:before {
   border-radius: 20px;
 }
 
-/* .invalid {
-  border:2px red solid;
+ /* .invalid {
+  border:2px solid red;
   background-color: #fee;
 }
 
 .valid {
-  border:2px green solid;
+  border:2px solid green;
   background-color: white;
-}  */
+}    */
