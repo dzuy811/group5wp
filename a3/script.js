@@ -62,6 +62,8 @@ var movieList = {
         ],
     },
 };
+
+
 // function show detail in SYNOPSIS PANEL
 function showDetail(key) {
     // variables
@@ -98,8 +100,9 @@ function showDetail(key) {
             movie_time +
             "</a>";
     }
-    document.getElementById("sysnopisBtnGroup").innerHTML = newBtnGroup;
+    document.getElementById("synopsisBtnGroup").innerHTML = newBtnGroup;
 }
+
 
 // function show detail in BOOKING FORM
 function showBooking(
@@ -118,8 +121,10 @@ function showBooking(
     document.getElementById("movie-day").value = movie_day;
     document.getElementById("movie-hour").value = movie_period;
     // add Event to Select
-    addEventtoAllSelect();
+    addEventToAllSelect();
 }
+
+
 // function change to full day
 function changeDay(movie_day) {
     if (movie_day == "MON") {
@@ -144,6 +149,8 @@ function changeDay(movie_day) {
         return "SUNDAY";
     }
 }
+
+
 // function calculate prices
 function calPrice() {
     // STANDARD
@@ -200,31 +207,38 @@ function calPrice() {
         }
     }
 }
+
+
 // add EVENT to all SELECT
-function addEventtoAllSelect() {
+function addEventToAllSelect() {
     x = document.querySelectorAll("select");
     for (i = 0; i < x.length; i++) {
         x[i].addEventListener("change", calPrice);
     }
 }
+
+
 // check is a NUM if true return this num, else return 0
 function checkIsInt(tmp) {
     return (e = Number.isInteger(parseInt(tmp)) ? parseInt(tmp) : parseInt(0));
 }
+
 
 // check the INPUT of right booking form by RegEx
 function checkInput(val) {
     name = document.getElementById(val).value;
     id_val = document.getElementById(val);
     // Get pattern from Name
-    if (val == "cust-name") var patt = /^[a-zA-Z\,-.' ?]{1,100}$/;
+    if (val == "cust-name")
+        var patt = /^[a-zA-Z\,-.' ?]{1,100}$/;
 
     // Get pattern from Email
     if (val == "cust-email")
         var patt = /^[a-z][a-z0-9_\.]{1,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
 
     // Get pattern from Mobile
-    if (val == "cust-mobile") var patt = /^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$/;
+    if (val == "cust-mobile")
+        var patt = /^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$/;
 
     // Get pattern from Card
     if (val == "cust-card")
@@ -241,5 +255,35 @@ function checkInput(val) {
         // id_val.classList.remove("invalid");
         id_val.style.border = "2px green solid";
         id_val.style.background = "#FFFFFF";
+    }
+}
+
+
+// Check the EXPIRY INPUT of right booking form 
+function checkExpiry() {
+    // Get month and year from USERS
+    var id_expiry = document.getElementById("cust-expiry");
+    var expiry = document.getElementById("cust-expiry").value;
+    var year = parseInt(expiry.substring(0, 4));
+    var month = parseInt(expiry.substring(5));
+    // Get CURRENT time
+    var current_time = new Date();
+    // Check the expiry and current time
+    if (year > current_time.getFullYear()) {
+        id_expiry.style.border = "2px green solid";
+        id_expiry.style.background = "#FFFFFF";
+    }
+    if (year < current_time.getFullYear()) {
+        id_expiry.style.border = "2px red solid";
+        id_expiry.style.background = "rgb(255, 238, 238)";
+    }
+    if (year == current_time.getFullYear()) {
+        if (month >= (current_time.getMonth() + 1)) {
+            id_expiry.style.border = "2px green solid";
+            id_expiry.style.background = "#FFFFFF";
+        } else {
+            id_expiry.style.border = "2px red solid";
+            id_expiry.style.background = "rgb(255, 238, 238)";
+        }
     }
 }
