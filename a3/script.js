@@ -220,6 +220,7 @@ function resetForm() {
         document.getElementById(id_form[i]).style.border = "1px solid black";
         document.getElementById(id_form[i]).style.background = "white";
     }
+    document.getElementById("submit_button").setAttribute("disabled", true);
 }
 
 // add EVENT to all SELECT
@@ -320,9 +321,20 @@ function enableButton() {
     } else {
         count+=1;
     }
+    // Check whether seat is chosen or not
+    var countSeats = 0;
+    var id_Seats = ["seats-STA", "seats-STP", "seats-STC", "seats-FCA","seats-FCP", "seats-FCC"];
+    // Check if ALL inputs are CORRECT
+    for (var j = 0; j < id_Seats.length; j++) {        
+        if(document.getElementById(id_Seats[j]).value !=""){
+            countSeats+=1;            
+        }       
+    };
+   
+    
     
     // Enabled the submit button. If not, remain disabled  
-    if (count == 6) {
+    if (count == 6 && countSeats >= 1) {
         document.getElementById("submit_button").removeAttribute("disabled");
     } else {
         if (!document.getElementById("submit_button").hasAttribute("disabled")) {
