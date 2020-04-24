@@ -106,7 +106,7 @@ function showDetail(key) {
 
 
 // function show detail in BOOKING FORM
-function showBooking(movie_id,movie_name,movie_day,movie_time,movie_period) {
+function showBooking(movie_id, movie_name, movie_day, movie_time, movie_period) {
     resetForm();
     // change the title of BOOKING FORM
     document.getElementById("movie-title").innerHTML = movie_name;
@@ -203,12 +203,14 @@ function calPrice() {
         }
     }
 }
+
+
 // reset form Function
 function resetForm() {
     document.getElementById("booking-form").reset();
     document.getElementById("total").innerHTML = "";
-    document.getElementById("note").innerHTML="";
-    document.getElementById("total-discounted").innerHTML ="";
+    document.getElementById("note").innerHTML = "";
+    document.getElementById("total-discounted").innerHTML = "";
     // reset title
     document.getElementById("movie-title").innerHTML = "MOVIE TITLE";
     document.getElementById("movie-title-day").innerHTML = "DAY";
@@ -222,6 +224,7 @@ function resetForm() {
     }
     document.getElementById("submit_button").setAttribute("disabled", true);
 }
+
 
 // add EVENT to all SELECT
 function addEventToAllSelect() {
@@ -262,11 +265,7 @@ function checkInput(val) {
     if (!patt.test(name)) {
         id_val.style.border = "2px solid red";
         id_val.style.background = "rgb(255, 238, 238)";
-        // id_val.classList.add("invalid");
-        // id_val.classList.remove("valid");
     } else {
-        // id_val.classList.add("valid");
-        // id_val.classList.remove("invalid");
         id_val.style.border = "2px solid green";
         id_val.style.background = "#FFFFFF";
     }
@@ -316,23 +315,20 @@ function enableButton() {
         }
     };
     // Check whether movie is chosen or not   
-    if(document.getElementById('movie-id').value ==""){
-        count=0;
+    if (document.getElementById('movie-id').value == "") {
+        count = 0;
     } else {
-        count+=1;
+        count += 1;
     }
     // Check whether seat is chosen or not
     var countSeats = 0;
-    var id_Seats = ["seats-STA", "seats-STP", "seats-STC", "seats-FCA","seats-FCP", "seats-FCC"];
+    var id_Seats = ["seats-STA", "seats-STP", "seats-STC", "seats-FCA", "seats-FCP", "seats-FCC"];
     // Check if ALL inputs are CORRECT
-    for (var j = 0; j < id_Seats.length; j++) {        
-        if(document.getElementById(id_Seats[j]).value !=""){
-            countSeats+=1;            
-        }       
+    for (var j = 0; j < id_Seats.length; j++) {
+        if (document.getElementById(id_Seats[j]).value != "") {
+            countSeats += 1;
+        }
     };
-   
-    
-    
     // Enabled the submit button. If not, remain disabled  
     if (count == 6 && countSeats >= 1) {
         document.getElementById("submit_button").removeAttribute("disabled");
@@ -342,4 +338,3 @@ function enableButton() {
         }
     }
 }
-
