@@ -213,6 +213,13 @@ function resetForm() {
     document.getElementById("movie-title").innerHTML = "MOVIE TITLE";
     document.getElementById("movie-title-day").innerHTML = "DAY";
     document.getElementById("movie-title-time").innerHTML = "TIME";
+    // reset color
+    var id_form = ["cust-name", "cust-mobile", "cust-card", "cust-email", "cust-expiry"];
+    // Check if ALL inputs are CORRECT
+    for (var i = 0; i < id_form.length; i++) {
+        document.getElementById(id_form[i]).style.border = "1px solid black";
+        document.getElementById(id_form[i]).style.background = "white";
+    }
 }
 
 // add EVENT to all SELECT
