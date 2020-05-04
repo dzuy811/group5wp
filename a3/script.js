@@ -291,7 +291,7 @@ function checkExpiry() {
         id_expiry.style.background = "rgb(255, 238, 238)";
     }
     if (year == current_time.getFullYear()) {
-        if (month >= (current_time.getMonth() + 1)) {
+        if (month >= (current_time.getMonth() + 2)) {
             id_expiry.style.border = "2px solid green";
             id_expiry.style.background = "#FFFFFF";
         } else {
