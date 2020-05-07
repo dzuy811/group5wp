@@ -19,10 +19,9 @@
 <body>
 
   <header>
-    <div style="background-color: #000000;" class=" d-flex">
+    <div style="background-color: #000000;" class=" d-flex"> 
       <a href="index.html"><img src="media/Logo.jpg" width="75" height="75"></a>
-      <p style="font-size: 3vw; color: white;">Cinemax </p>
-    </div>
+      <p style="font-size: 3vw; color: white;">Cinemax </p></div>
   </header>
 
   <!-- NAVBAR -->
@@ -48,7 +47,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#film">Film Showing</a>
-            <a class="dropdown-item" href="#synopsis">Synopsis Area</a>
+            <a class="dropdown-item" href="#Synopsis">Synopsis Area</a>
             <a class="dropdown-item" href="#Booking">Booking Area</a>
           </div>
         </li>
@@ -62,13 +61,13 @@
   </nav>
 
   <main>
-
-    <video no-controls autoplay loop muted width="100%">
-      <source src="media/FullHD.mp4" type="video/mp4">
-    </video>
-
-
-
+    
+      <video  no-controls autoplay loop muted width="100%">
+         <source src="media/FullHD.mp4" type="video/mp4">
+      </video>
+    
+    
+  
 
     <!-- ABOUT US -->
     <article id="aboutus" class="container-fluid text-white " style="padding-top:40px;">
@@ -194,7 +193,6 @@
       <!-- 1st row -->
       <div class="card-desk">
         <div class="row row-cols-1 row-cols-md-2 ">
-          <!-- FIRST CARD -->
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -208,14 +206,12 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ACT');"></a>
 
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- SECOND CARD -->
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -229,7 +225,6 @@
                     <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('RMC');"></a>
 
                   </div>
                 </div>
@@ -240,7 +235,7 @@
           <!-- end 1st row -->
 
           <!-- 2nd row -->
-          <!-- THIRD CARD -->
+
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -256,14 +251,12 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ANM');"></a>
 
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- FOURTH CARD -->
           <div class="col-md-6 d-flex justify-content-center ">
             <div class="card border-info mb-3  w-100" style="max-width: 540px;">
               <div class="row no-gutters">
@@ -277,7 +270,6 @@
                     <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
                     <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
-                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('AHF');"></a>
 
                   </div>
                 </div>
@@ -291,26 +283,16 @@
     <!-- END NOW SHOWING -->
 
     <!-- SYNOPSIS PANEL -->
-    <article id="synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f; height: 130vh;">
+    <article id="Synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f;">
       <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
       <div class="container card bg-light " style="border-color:#000000">
         <div class="card-body ">
-          <!-- SYNOPSIS TITLE -->
-          <div class="row">
-            <div class="col-6">
-              <h1 id="synopsisTitle" class="text-monospace font-weight-bold">Avengers: Endgame</h1>
-            </div>
-            <div class="col-6">
-              <h1 id="synopsisRating" class="text-monospace font-weight-bold">PG-13</h1>
-            </div>
-          </div>
-          <!-- DESCRIPTION -->
+          <h1 class="text-monospace font-weight-bold">Avengers: Endgame &emsp;&emsp;&emsp;&emsp; PG-13</h1>
           <hr class="style">
           <div class="row">
             <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
               <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
-              <p id="synopsisDescription" class="demoFont3" style="font-size: 18px; text-align: justify;">After the
-                devastating events of Avengers: Infinity War
+              <p class="demoFont3" style="font-size: 18px">After the devastating events of Avengers: Infinity War
                 (2018),
                 the universe is in
                 ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
@@ -318,28 +300,17 @@
                 consequences may be in store, and no matter who they face...</p>
             </div>
             <div class="col-md-6 row justify-content-center ">
-              <iframe id="synopsisYoutube" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen style="margin-left: 50px; padding-top: 20px"></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                style="margin-left: 50px; padding-top: 20px"></iframe>
             </div>
             <div style="padding-top:30px">
-              <div id="synopsisBtnGroup" class="" data-toggle="buttons">
+              <div class="" data-toggle="buttons">
                 <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
-                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
-                  onclick="showBooking('ACT','Avengers: Endgame','WED','9 P.M','T21');" href="#Booking"> WED - 9 P.M
-                </a>
-                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
-                  onclick="showBooking('ACT','Avengers: Endgame','THU','9 P.M','T21');" href="#Booking"> THU - 9 P.M
-                </a>
-                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
-                  onclick="showBooking('ACT','Avengers: Endgame','FRI','9 P.M','T21');" href="#Booking"> FRI - 9 P.M
-                </a>
-                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
-                  onclick="showBooking('ACT','Avengers: Endgame','SAT','6 P.M','T18');" href="#Booking"> SAT - 6 P.M
-                </a>
-                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
-                  onclick="showBooking('ACT','Avengers: Endgame','SUN','6 P.M','T18');" href="#Booking"> SUN - 6 P.M
-                </a>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Wed - 9 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Fri - 9 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sat - 6 pm </button>
+                <button type="button" class="btn btn-info" style="margin-bottom: 10px"> Sun - 6 pm </button>
               </div>
             </div>
           </div>
@@ -348,31 +319,11 @@
 
     <!-- Booking Area -->
     <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
-      <!-- <form action=""> -->
-      <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="POST" target="blank"
-        name="BookingForm" id="booking-form">
+      <form action="">
         <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
         <div class="container card bg-light " style="border-color:#000000">
-          <!-- BOOKING TITLE -->
-          <div class="row">
-            <div class=" col-sm-12 col-md-6">
-              <h1 id="movie-title" class="text-monospace text-danger font-weight-bold mt-3 ml-5">MOVIE TITLE </h1>
-            </div>
-            <div class="col-sm-12 col-md-3">
-              <h1 id="movie-title-day" class="text-monospace text-danger font-weight-bold mt-3 ml-5"> DAY</h1>
-            </div>
-            <div class="col-sm-12 col-md-3">
-              <h1 id="movie-title-time" class="text-monospace text-danger font-weight-bold mt-3 ml-5">TIME</h1>
-            </div>
-          </div>
-          <!--END  BOOKING TITLE -->
+          <h1 class="text-monospace font-weight-bold mt-3 ml-5">MOVIE TITLE - DAY - TIME</h1>
 
-          <!-- HIDDEN INPUT of BOOKING  -->
-          <input type="text" id="movie-id" value="" name="movie[id]" class="d-none">
-          <input type="text" id="movie-day" value="" name="movie[day]" class="d-none">
-          <input type="text" id="movie-hour" value="" name="movie[hour]" class="d-none">
-          <input type="text" id="total-price" value="" name="total[price]" class="d-none">
-          <!-- END HIDDEN INPUT of BOOKING  -->
           <div class="card-body">
             <div>
               <div class="row">
@@ -381,148 +332,101 @@
                   <div class="card container mb-3" style="border-color:#000000">
                     <p style="font-size: 175%;"><b>Standard</b></p>
                     <div class="form-group">
-                      <!-- Standard -->
-                      <!-- STANDARD Chair Adults -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
-                          <label for="seats-STA" style="font-size: 150%;">Adults</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[STA]" id="seats-STA" class="btn btn-info dropdown-toggle "
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--STANDARD ChairsConcession -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
 
-                          <label class="" for="seats-STP" style="font-size: 150%;">Concession</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[STP]" id="seats-STP" class="btn btn-info dropdown-toggle"
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--STANDARD Chairs Children -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
-                          <label class="" for="seats-STC" style="font-size: 150%;">Children</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[STC]" id="seats-STC" class="btn btn-info dropdown-toggle"
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
+                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
+                      <select name="Standard" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
+                      <select name="Standard" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
+                      <select name="Standard" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
 
                     </div>
                   </div>
                   <div class="card container" style="border-color:#000000">
                     <p style="font-size: 175%;"><b>First Class</b></p>
                     <div class="form-group">
-                      <!--FIRST Chair Adults -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
-                          <label for="seats-FCA" style="font-size: 150%;">Adults</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[FCA]" id="seats-FCA" class="btn btn-info dropdown-toggle"
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--FIRST ChairsConcession -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
-
-                          <label class="" for="seats-FCP" style="font-size: 150%;">Concession</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[FCP]" id="seats-FCP" class="btn btn-info dropdown-toggle"
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
-                      <!--FIRST Chairs Children -->
-                      <div class="row mb-3">
-                        <div class="col d-flex align-item-center  justify-content-end">
-                          <label class="" for="seats-FCC" style="font-size: 150%;">Children</label>
-                        </div>
-                        <div class="col d-flex justify-content-center">
-                          <select name="seats[FCC]" id="seats-FCC" class="btn btn-info dropdown-toggle"
-                            onchange="enableButton();">
-                            <option value="">Please Select</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                          </select>
-                        </div>
-                      </div>
-
+                      <label class="col-4 col-form-label" for="name" style="padding-bottom: 30px">Adults</label>
+                      <select name="First" id="ChairsAdult" class="btn btn-info dropdown-toggle">
+                        <option value="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Concession</label>
+                      <select name="First" id="ChairsConcession" class="btn btn-info dropdown-toggle">
+                        <option value="" class="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
+                      <br>
+                      <label class="col-4 col-form-label" for="email" style="padding-bottom: 30px">Children</label>
+                      <select name="First" id="ChairsChildren" class="btn btn-info dropdown-toggle">
+                        <option value="" class="">Please Select</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -532,64 +436,50 @@
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
                   <div class="form-group">
                     <div class="form-group row" style="padding-top: 20px">
-                      <label for="cust-name" class="col-sm-3 col-form-label">Name</label>
+                      <label for="Name" class="col-sm-3 col-form-label">Name</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="cust[name]" id="cust-name" placeholder="Name"
-                          onblur="checkInput('cust-name');enableButton();" required>
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" required>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="cust-email" class="col-sm-3 col-form-label">Email</label>
+                      <label for="Email" class="col-sm-3 col-form-label">Email</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="cust[email]" id="cust-email" placeholder="Email"
-                          onblur="checkInput('cust-email');enableButton();" required>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="cust-mobile" class="col-sm-3 col-form-label">Mobile</label>
+                      <label for="Mobile" class="col-sm-3 col-form-label">Mobile</label>
                       <div class="col-sm-9">
-                        <input type="tel" class="form-control" name="cust[mobile]" id="cust-mobile" placeholder="Mobile"
-                          onblur="checkInput('cust-mobile');enableButton();" required>
+                        <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" required>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="cust-card" class="col-sm-3 col-form-label">Credit Card</label>
+                      <label for="CreditCard" class="col-sm-3 col-form-label">Credit Card</label>
                       <div class="col-sm-9">
-                        <input type="text" class="form-control" name="cust[card]" id="cust-card"
-                          placeholder="Credit Card" onblur="checkInput('cust-card');enableButton();" required>
+                        <input type="text" class="form-control" id="inputCard" placeholder="Credit Card" minlength="14"
+                          maxlength="19" required>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <label for="cust-expiry" class="col-sm-3 col-form-label">Expiry</label>
+                      <label for="Date" class="col-sm-3 col-form-label">Expiry</label>
                       <div class="col-sm-9">
-                        <input type="Month" class="form-control" name="cust[expiry]" id="cust-expiry"
-                          onblur="checkExpiry();enableButton();" required>
+                        <input type="Month" class="form-control" id="inputDate" name="birthday" required>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- END RIGHT BOOKING FORM -->
+                <!-- END RIGHT BOOKING FORM -->
 
+
+              </div>
               <!-- SUBMIT BTN -->
               <div style="padding-top: 20px">
                 <div class="row">
-                  <div class="col-md-2 d-flex align-content-center  justify-content-sm-start justify-content-md-end ">
-                    <p style="font-size: 30px;">Total:</p>
+                  <div class="col-md-6">
+                    <p>Total:</p>
                   </div>
-                  <div class="col-md-4">
-                    <div
-                      style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
-                      class="d-flex align-content-center justify-content-center">
-                      <p id="total" style="font-size: 30px;" class="pr-3"></p>
-                      <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
-                    </div>
-                  </div>
-                  <div class="col-md-5 d-flex align-self-center justify-content-center">
-                    <p id="note" style="font-size: 120%; color: tomato;"></p>
-                  </div>
-                  <div class="col-md-1  d-flex align-self-center justify-content-end">
-                    <input id="submit_button" class="btn btn-info" type="submit" disabled value="Order">
+                  <div class="col-md-6">
+                    <input class="btn btn-info" type="submit" value="Order" style="float:right">
                   </div>
                 </div>
               </div>
@@ -651,7 +541,6 @@
     </div>
     <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
   </footer>
-  <script src="../a3/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>

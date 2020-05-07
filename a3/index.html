@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 3</title>
+  <link id='stylecss1' type="text/css" rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+  <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
+
+  <script src='../wireframe.js'></script>
+</head>
+
+<body>
+
+  <header>
+    <div style="background-color: #000000;" class=" d-flex">
+      <a href="index.html"><img src="media/Logo.jpg" width="75" height="75"></a>
+      <p style="font-size: 3vw; color: white;">Cinemax </p>
+    </div>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar sticky-top navbar-expand-md navbar-dark " style="background-color: #000000;">
+    <a class="navbar-brand" href="index.html">Cinemax</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#seating">Prices</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Now Showing
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#film">Film Showing</a>
+            <a class="dropdown-item" href="#synopsis">Synopsis Area</a>
+            <a class="dropdown-item" href="#Booking">Booking Area</a>
+          </div>
+        </li>
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main>
+
+    <video no-controls autoplay loop muted width="100%">
+      <source src="media/FullHD.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    <!-- ABOUT US -->
+    <article id="aboutus" class="container-fluid text-white " style="padding-top:40px;">
+      <h2 class="demoFont text-info text-center" style="padding: 30px;">About Us:</h2>
+      <div class="row align-items-center content">
+        <div class="col-md-6  order-1">
+          <img src="media/dolbycinema.jpg" alt="" class="img-fluid" style="padding-bottom:30px">
+        </div>
+        <div class="col-md-6 order-2 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-10  blurb mb-5 mb-md-0 text-dark">
+              <p class="lead "><b>Welcome to our theater, where you can enjoy and deep in an overwhelming
+                  quality of the footage and sound.
+                  Why? Because now, after the evolution of upgrading the theater, all customers could enjoy all the
+                  technology of 3D Dolby Vision projection and Dolby Atmos sound:</b>
+                <ul>
+                  <li>
+                    Powered by dual-laser projection technology and engineered for a consistent experience, Dolby
+                    Vision lets you see more of the story.
+
+                  </li>
+                  <li>
+                    Moving audio could flow all around you, even from above and behind, put you at the center of
+                    the story.
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- END ABOUT US -->
+
+    <!--SEATS  -->
+
+    <article id="" class="container-fluid pt-5 pb-5" style="background-color: black">
+      <div class="d-flex flex-row">
+        <div class="col-5 d-flex justify-content-center">
+          <div class="card" style="width: 30rem;">
+            <img src="media/seat3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 2vw; text-align: center;">Standard Seating</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 d-flex align-items-center" style="padding: 0px 0px;">
+
+          <div class=" glow ">OUR NEW SEATS</div>
+
+        </div>
+        <div class="col-5 d-flex justify-content-center">
+          <div class="card" style="width: 30rem;">
+            <img src="media/seat4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text" style="font-size: 2vw; text-align: center;">First Class Seating</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- END SEATS -->
+
+    <!-- Seating Prices -->
+    <article>
+      <div id="seating" class="container-fluid parallax-div">
+        <h1 class="text-center demoFont" style="padding-top:100px">Seating Prices:</h1>
+        <hr class="style-white style-white:before">
+        <div class="table-responsive-xl">
+          <table class="table ">
+            <caption class="text-white bg-dark"><i>* Weekday afternoons at 12 pm (ie weekday matinée sessions,
+                Monday - Friday) and all day on Mondays and Wednesdays.</i></caption>
+            <thead>
+              <tr>
+                <th scope="col" class="table-light">SEAT TYPE</th>
+                <th scope="col" class="text-center table-light">Standard Adult</th>
+                <th scope="col" class="text-center table-light">Standard Concession</th>
+                <th scope="col" class="text-center table-light">Standard Child</th>
+                <th scope="col" class="table-primary text-center">First Class Adult</th>
+                <th scope="col" class="table-primary text-center">First Class Concession</th>
+                <th scope="col" class="table-primary text-center">First Class Child</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="table-light">SEAT CODE</th>
+                <td class="text-center table-light">STA</td>
+                <td class="text-center table-light">STP</td>
+                <td class="text-center table-light">STC</td>
+                <td class="table-primary text-center">FCA</td>
+                <td class="table-primary text-center">FCP</td>
+                <td class="table-primary text-center">FCC</td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-light">NORMAL TIMES</th>
+                <td class="text-center table-light">19.80</td>
+                <td class="text-center table-light">17.50</td>
+                <td class="text-center table-light">15.30</td>
+                <td class="table-primary text-center">30.00</td>
+                <td class="table-primary text-center">27.00</td>
+                <td class="table-primary text-center">24.00</td>
+              </tr>
+              <tr>
+                <th scope="row" class="table-warning"><i>SPEACIAL TIMES *</i></th>
+                <td class="table-warning text-center"><i>14.00</i></td>
+                <td class="table-warning text-center"><i>12.50</i></td>
+                <td class="table-warning text-center"><i>11.00</i></td>
+                <td class="table-warning text-center"><i>24.00</i></td>
+                <td class="table-warning text-center"><i>22.50</i></td>
+                <td class="table-warning text-center"><i>21.00</i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+    <!-- END SEATING PRICES -->
+
+    <!-- NOW SHOWING -->
+    <article id="film" class="container-fluid" style="background-color: #f3f3f3;">
+      <div class="demoFont text-info" style=" text-align: center; padding-top: 70px;">Film Showing:</div>
+      <hr class="style-two style-two:before">
+      <!-- 1st row -->
+      <div class="card-desk">
+        <div class="row row-cols-1 row-cols-md-2 ">
+          <!-- FIRST CARD -->
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/endgame_poster.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> Avengers: Endgame PG-13</b></p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 6 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ACT');"></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SECOND CARD -->
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/topendwedding.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> Top End Wedding M</b></p>
+                    <p class="card-text" style="font-size: 3vh;">MON - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">TUE - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 3 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 3 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('RMC');"></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end 1st row -->
+
+          <!-- 2nd row -->
+          <!-- THIRD CARD -->
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/dumbo_poster.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b>Dumbo PG</b></p>
+                    <p class="card-text" style="font-size: 3vh;">MON - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">TUE - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 6 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 12 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('ANM');"></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FOURTH CARD -->
+          <div class="col-md-6 d-flex justify-content-center ">
+            <div class="card border-info mb-3  w-100" style="max-width: 540px;">
+              <div class="row no-gutters">
+                <div class="col-md-5 pt-3 pb-3 pl-3">
+                  <img src="media/thehappyprince.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <p class="card-title" style="font-size: 4vh;"> <b> The Happy Prince R</b></p>
+                    <p class="card-text" style="font-size: 3vh;">WED - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">FRI - 12 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SAT - 9 P.M</p>
+                    <p class="card-text" style="font-size: 3vh;">SUN - 9 P.M</p>
+                    <a href="#synopsis" class="stretched-link" id="" onclick="showDetail('AHF');"></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end 2nd row -->
+      </div>
+    </article>
+    <!-- END NOW SHOWING -->
+
+    <!-- SYNOPSIS PANEL -->
+    <article id="synopsis" style="padding-top:20px; padding-bottom: 80px; background-color: #352f2f; height: 130vh;">
+      <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Synopsis Panel: </h1>
+      <div class="container card bg-light " style="border-color:#000000">
+        <div class="card-body ">
+          <!-- SYNOPSIS TITLE -->
+          <div class="row">
+            <div class="col-6">
+              <h1 id="synopsisTitle" class="text-monospace font-weight-bold">Avengers: Endgame</h1>
+            </div>
+            <div class="col-6">
+              <h1 id="synopsisRating" class="text-monospace font-weight-bold">PG-13</h1>
+            </div>
+          </div>
+          <!-- DESCRIPTION -->
+          <hr class="style">
+          <div class="row">
+            <div class="col-md-6" style="padding-right:50px; padding-top: 20px">
+              <p class="font-weight-bold" style="font-size: 25px">Plot description:</p>
+              <p id="synopsisDescription" class="demoFont3" style="font-size: 18px; text-align: justify;">After the
+                devastating events of Avengers: Infinity War
+                (2018),
+                the universe is in
+                ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must
+                assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what
+                consequences may be in store, and no matter who they face...</p>
+            </div>
+            <div class="col-md-6 row justify-content-center ">
+              <iframe id="synopsisYoutube" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="margin-left: 50px; padding-top: 20px"></iframe>
+            </div>
+            <div style="padding-top:30px">
+              <div id="synopsisBtnGroup" class="" data-toggle="buttons">
+                <p style="padding-right:50px;  font-size: 20px">Making a book:</p>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','WED','9 P.M','T21');" href="#Booking"> WED - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','THU','9 P.M','T21');" href="#Booking"> THU - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','FRI','9 P.M','T21');" href="#Booking"> FRI - 9 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','SAT','6 P.M','T18');" href="#Booking"> SAT - 6 P.M
+                </a>
+                <a class="btn btn-info mr-3" style="margin-bottom: 10px"
+                  onclick="showBooking('ACT','Avengers: Endgame','SUN','6 P.M','T18');" href="#Booking"> SUN - 6 P.M
+                </a>
+              </div>
+            </div>
+          </div>
+    </article>
+    <!-- END SYNOPSIS PANEL  -->
+
+    <!-- Booking Area -->
+    <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
+      <!-- <form action=""> -->
+      <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="POST" target="blank"
+        name="BookingForm" id="booking-form">
+        <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
+        <div class="container card bg-light " style="border-color:#000000">
+          <!-- BOOKING TITLE -->
+          <div class="row">
+            <div class=" col-sm-12 col-md-6">
+              <h1 id="movie-title" class="text-monospace text-danger font-weight-bold mt-3 ml-5">MOVIE TITLE </h1>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <h1 id="movie-title-day" class="text-monospace text-danger font-weight-bold mt-3 ml-5"> DAY</h1>
+            </div>
+            <div class="col-sm-12 col-md-3">
+              <h1 id="movie-title-time" class="text-monospace text-danger font-weight-bold mt-3 ml-5">TIME</h1>
+            </div>
+          </div>
+          <!--END  BOOKING TITLE -->
+
+          <!-- HIDDEN INPUT of BOOKING  -->
+          <input type="text" id="movie-id" value="" name="movie[id]" class="d-none">
+          <input type="text" id="movie-day" value="" name="movie[day]" class="d-none">
+          <input type="text" id="movie-hour" value="" name="movie[hour]" class="d-none">
+          <input type="text" id="total-price" value="" name="total[price]" class="d-none">
+          <!-- END HIDDEN INPUT of BOOKING  -->
+          <div class="card-body">
+            <div>
+              <div class="row">
+                <!-- LEFT BOOKING FORM -->
+                <div class="col-md-6">
+                  <div class="card container mb-3" style="border-color:#000000">
+                    <p style="font-size: 175%;"><b>Standard</b></p>
+                    <div class="form-group">
+                      <!-- Standard -->
+                      <!-- STANDARD Chair Adults -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label for="seats-STA" style="font-size: 150%;">Adults</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[STA]" id="seats-STA" class="btn btn-info dropdown-toggle "
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--STANDARD ChairsConcession -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+
+                          <label class="" for="seats-STP" style="font-size: 150%;">Concession</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[STP]" id="seats-STP" class="btn btn-info dropdown-toggle"
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--STANDARD Chairs Children -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label class="" for="seats-STC" style="font-size: 150%;">Children</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[STC]" id="seats-STC" class="btn btn-info dropdown-toggle"
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="card container" style="border-color:#000000">
+                    <p style="font-size: 175%;"><b>First Class</b></p>
+                    <div class="form-group">
+                      <!--FIRST Chair Adults -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label for="seats-FCA" style="font-size: 150%;">Adults</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[FCA]" id="seats-FCA" class="btn btn-info dropdown-toggle"
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--FIRST ChairsConcession -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+
+                          <label class="" for="seats-FCP" style="font-size: 150%;">Concession</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[FCP]" id="seats-FCP" class="btn btn-info dropdown-toggle"
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!--FIRST Chairs Children -->
+                      <div class="row mb-3">
+                        <div class="col d-flex align-item-center  justify-content-end">
+                          <label class="" for="seats-FCC" style="font-size: 150%;">Children</label>
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                          <select name="seats[FCC]" id="seats-FCC" class="btn btn-info dropdown-toggle"
+                            onchange="enableButton();">
+                            <option value="">Please Select</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- END LEFT BOOKING FORM -->
+
+                <!-- RIGHT BOOKING FORM -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                  <div class="form-group">
+                    <div class="form-group row" style="padding-top: 20px">
+                      <label for="cust-name" class="col-sm-3 col-form-label">Name</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="cust[name]" id="cust-name" placeholder="Name"
+                          onblur="checkInput('cust-name');enableButton();" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="cust-email" class="col-sm-3 col-form-label">Email</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="cust[email]" id="cust-email" placeholder="Email"
+                          onblur="checkInput('cust-email');enableButton();" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="cust-mobile" class="col-sm-3 col-form-label">Mobile</label>
+                      <div class="col-sm-9">
+                        <input type="tel" class="form-control" name="cust[mobile]" id="cust-mobile" placeholder="Mobile"
+                          onblur="checkInput('cust-mobile');enableButton();" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="cust-card" class="col-sm-3 col-form-label">Credit Card</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" name="cust[card]" id="cust-card"
+                          placeholder="Credit Card" onblur="checkInput('cust-card');enableButton();" required>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="cust-expiry" class="col-sm-3 col-form-label">Expiry</label>
+                      <div class="col-sm-9">
+                        <input type="Month" class="form-control" name="cust[expiry]" id="cust-expiry"
+                          onblur="checkExpiry();enableButton();" required>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END RIGHT BOOKING FORM -->
+
+              <!-- SUBMIT BTN -->
+              <div style="padding-top: 20px">
+                <div class="row">
+                  <div class="col-md-2 d-flex align-content-center  justify-content-sm-start justify-content-md-end ">
+                    <p style="font-size: 30px;">Total:</p>
+                  </div>
+                  <div class="col-md-4">
+                    <div
+                      style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
+                      class="d-flex align-content-center justify-content-center">
+                      <p id="total" style="font-size: 30px;" class="pr-3"></p>
+                      <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex align-self-center justify-content-center">
+                    <p id="note" style="font-size: 120%; color: tomato;"></p>
+                  </div>
+                  <div class="col-md-1  d-flex align-self-center justify-content-end">
+                    <input id="submit_button" class="btn btn-info" type="submit" disabled value="Order">
+                  </div>
+                </div>
+              </div>
+              <!-- END SUBMIT BTN -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </article>
+
+  </main>
+
+  <footer>
+    <h3 class="text-center text-info" style="padding-top:10px; padding-bottom:10px;">CONTACT US </h3>
+    <div class="container">
+      <!-- UPPER FOOTER -->
+      <div class="row text-white">
+        <div class="col">
+          <div class="">
+            <p>Student: VO TRAN TRUONG DUY</p>
+            <p>ID: s3818381</p>
+            <p>EMAIL: s3818381@rmit.edu.vn</p>
+            <p>PHONE: 0903818381</p>
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="">
+            <p>Student: NGUYEN CAT TUONG</p>
+            <p>ID: s3818196</p>
+            <p>EMAIL: s3818196@rmit.edu.vn</p>
+            <p>PHONE: 0903818196</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 mb-5 d-none d-md-block">
+          <p>Quick Links<p>
+              <ul class="list-unstyled footer-link">
+                <li><a href="#aboutus" class="text-info">About us</a></li>
+                <li><a href="#seating" class="text-info">Prices</a></li>
+                <li><a href="#film" class="text-info">Now Showing</a></li>
+
+              </ul>
+        </div>
+      </div>
+      <!-- END UPPER FOOTER -->
+
+      <!-- LOWER FOOTER -->
+      <div class="row">
+        <div class="col-12 text-md-center text-left text-white">
+          <p>&copy;
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by DUY &
+            TUONG <a class="text-info" href="https://s3818381.github.io/duywp/a2/index.html" target="_blank">CINEMAX</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+  </footer>
+  <script src="../a3/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('body').scrollspy({ target: ".navbar", offset: 75 });
+    });
+  </script>
+</body>
+
+</html>
