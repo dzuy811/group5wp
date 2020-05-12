@@ -49,7 +49,7 @@ function preShow($arr, $returnAsString = false)
 // Load data from a spreadsheet
 function loadData($filename)
 {
-  $fp = fopen('data/'.$filename.'.txt', 'r');
+  $fp = fopen($filename.'.txt', 'r');
   if (($headings = fgetcsv($fp, 0, "\t")) !== false) {
     while ($cells = fgetcsv($fp, 0, "\t")) {
       for ($x = 1; $x < count($cells); $x++)
@@ -66,7 +66,7 @@ function loadData($filename)
 }
 // write data to spreadsheet
 function writeData($filename){
-$fp = fopen('data/'.$filename,"a");
+$fp = fopen($filename,"a");
 flock($fp, LOCK_EX);
 $record= processData($_SESSION['cart']);
 

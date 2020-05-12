@@ -66,7 +66,7 @@ function loadData($filename)
 }
 // write data to spreadsheet
 function writeData($filename){
-$fp = fopen('data/'.$filename,"a");
+$fp = fopen($filename,"a");
 flock($fp, LOCK_EX);
 $record= processData($_SESSION['cart']);
 
