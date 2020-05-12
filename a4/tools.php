@@ -286,7 +286,7 @@ function top_module($pageTitle)
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>$pageTitle</title>
-    <link id='stylecss1' type="text/css" rel="stylesheet" href="style.css">
+    <link id='stylecss1' type="text/css" rel="stylesheet" href="assets/style.css">
   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -392,7 +392,7 @@ function end_module()
         <p>&copy;
           Copyright &copy;
           <script>document.write(new Date().getFullYear());</script> All rights reserved | This web is made by DUY &
-          TUONG <a class="text-info" href="https://s3818381.github.io/duywp/a2/index.html" target="_blank">CINEMAX</a>
+          TUONG <a class="text-info" href="https://s3818381.github.io/group5wp/a4/index.php" target="_blank">CINEMAX</a>
         </p>
       </div>
     </div>
@@ -402,7 +402,7 @@ function end_module()
 </div>
 </footer>
 
-<script src="../a3/script.js"></script>
+<script src="assets/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
   crossorigin="anonymous"></script>
