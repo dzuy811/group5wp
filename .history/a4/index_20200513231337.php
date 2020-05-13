@@ -9,7 +9,7 @@
           $_POST="";     
       }
       else{      
-      if(isset($_POST['order'])) {
+      if(!empty($_POST)) {
         // false when there is NO error found
         $foundErrors = false;
         // Remove unnecessary tags
@@ -502,7 +502,7 @@
                   <input class="btn btn-info float-right" type='submit' id="session_reset" name='session-reset' value='Reset session'></div>
                   
                   <div class="col-md-1  d-flex align-self-center justify-content-end">                  
-                    <input id="submit_button" class="btn btn-info" type="submit" name="order" value="Order">
+                    <input id="submit_button" class="btn btn-info" type="submit" value="Order">
                   </div>
                 </div>
               </div>

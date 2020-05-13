@@ -9,7 +9,7 @@
           $_POST="";     
       }
       else{      
-      if(isset($_POST['order'])) {
+      if(!empty($_POST)) {
         // false when there is NO error found
         $foundErrors = false;
         // Remove unnecessary tags
