@@ -4,7 +4,7 @@
  // Form Validation
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (isset($_POST['session-reset'])) {
-          unset($_SESSION['cart']);         
+          unset($_SESSION['cart']);
       }
       else{      
       if(!empty($_POST)) {
@@ -488,7 +488,7 @@
                       style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
                       class="d-flex align-content-center justify-content-center">
                       <input type="text" id="totalInput" value="" name="total_input" class="d-none">
-                      <p id="total" style="font-size: 30px;" class="pr-3"><?= (isset($_POST['total_input']) && $_POST['total_input'] != "") ?  '$ '.$_POST['total_input'] :""?></p>
+                      <p id="total" style="font-size: 30px;" class="pr-3"><?= (isset($_POST['total_input']) && isset($_POST['total_input'])!="") ?  '$ '.$_POST['total_input'] :""?></p>
                       <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
                     </div>
                   </div>

@@ -1,1 +1,3 @@
 Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	"FCP Qty"	"FCC Qty"	Total
+"5/ 13/ 2020"	dsd	tuong04011998@gmail.com	"+614 12312313"	ACT	SUN	T18	3	8	6	0	0	0	317.67
+"5/ 13/ 2020"	dsd	tuong04011998@gmail.com	"+614 12312313"	ACT	SAT	T18	2	0	0	0	0	0	43.2

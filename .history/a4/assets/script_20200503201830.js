@@ -178,7 +178,6 @@ function calPrice() {
         seatsFCP * 22.5 +
         seatsFCC * 21.0;
     document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-    document.getElementById("totalInput").value = total.toFixed(2) ;
     // Check discount
     // Check T12
     if (movie_hour == "T12" && movie_day != "SAT" && movie_day != "SUN") {
@@ -186,14 +185,12 @@ function calPrice() {
             "$" + total_discounted.toFixed(2);
         document.getElementById("note").innerHTML = "Discount at 12pm on weekdays";
         document.getElementById("total").style.textDecoration = "line-through";
-        document.getElementById("totalInput").value = total_discounted.toFixed(2) ;
         
     } else {
         // check MON && WED
         if ((movie_day == "MON" || movie_day == "WED") && movie_hour != "T12") {
             document.getElementById("total-discounted").innerHTML =
                 "$" + total_discounted.toFixed(2);
-            document.getElementById("totalInput").value = total_discounted.toFixed(2) ;
             document.getElementById("note").innerHTML =
                 "Discount for All day Monday and Wednesday";
             document.getElementById("total").style.textDecoration = "line-through";           

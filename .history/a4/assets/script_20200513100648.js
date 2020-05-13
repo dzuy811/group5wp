@@ -178,7 +178,7 @@ function calPrice() {
         seatsFCP * 22.5 +
         seatsFCC * 21.0;
     document.getElementById("total").innerHTML = "$" + total.toFixed(2);
-    document.getElementById("totalInput").value = total.toFixed(2) ;
+    document.getElementById("total-input").value = total.toFixed(2) ;
     // Check discount
     // Check T12
     if (movie_hour == "T12" && movie_day != "SAT" && movie_day != "SUN") {

@@ -132,10 +132,10 @@ function printValueMovie($a,$b,$c=""){
   else{
     return $c;
   }  
-} 
+}
 // print value of input
 function printValue($a,$b,$c=""){
-   return (isset($_POST[$a][$b]) ?  test_input($_POST[$a][$b]) :$c );
+   return (isset($_POST[$a][$b]) ?  $_POST[$a][$b] :$c );
 }
 // check this day is discount or full
 function checkDiscount($day, $time){

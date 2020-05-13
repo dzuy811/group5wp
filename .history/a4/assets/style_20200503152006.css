@@ -45,7 +45,7 @@ body {
 }
 .parallax-div {
   /* The image used */
-  background-image: url("../media/cinema04.jpg");
+  background-image: url("media/cinema04.jpg");
 
   /* Set a specific height */
   min-height: 600px;

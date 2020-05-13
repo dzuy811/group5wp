@@ -4,7 +4,7 @@
  // Form Validation
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (isset($_POST['session-reset'])) {
-          unset($_SESSION['cart']);         
+          unset($_SESSION['cart']);
       }
       else{      
       if(!empty($_POST)) {
@@ -488,18 +488,18 @@
                       style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
                       class="d-flex align-content-center justify-content-center">
                       <input type="text" id="totalInput" value="" name="total_input" class="d-none">
-                      <p id="total" style="font-size: 30px;" class="pr-3"><?= (isset($_POST['total_input']) && $_POST['total_input'] != "") ?  '$ '.$_POST['total_input'] :""?></p>
+                      <p id="total" style="font-size: 30px;" class="pr-3"><?= isset($_POST['total_input']) ?  '$ '.$_POST['total_input'] :""?></p>
                       <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
                     </div>
                   </div>
-                  
                   <div class="col-md-3 d-flex align-self-center justify-content-center">
                     <p id="note" style="font-size: 120%; color: tomato;"></p>
                   </div>
                   <div class="col-md-2  d-flex align-self-center justify-content-end">
-                  <input class="btn btn-info float-right" type='submit' name='session-reset' value='Reset session'></div>
+                  <input class="btn btn-lg btn-info float-right" type='submit' name='session-reset' value='Reset session'></div>
+                  </div>
+                  <div class="col-md-1  d-flex align-self-center justify-content-end">
                   
-                  <div class="col-md-1  d-flex align-self-center justify-content-end">                  
                     <input id="submit_button" class="btn btn-info" type="submit" value="Order">
                   </div>
                 </div>

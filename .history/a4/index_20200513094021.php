@@ -4,7 +4,7 @@
  // Form Validation
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (isset($_POST['session-reset'])) {
-          unset($_SESSION['cart']);         
+          unset($_SESSION['cart']);
       }
       else{      
       if(!empty($_POST)) {
@@ -85,7 +85,9 @@
             }             
         }
         // Check seat
-        
+        if ($foundErrors) {
+          $seatError = ' <span style="color:red; font-size:20px">Select the seat again!</span>';
+        }
         $countSeats = 0;
         foreach ($_POST['seats'] as $key => $value) {
           if (intval($value) != 0) {
@@ -93,7 +95,7 @@
           }
         }
         if ($countSeats == 0) {
-          $seatError = ' <span style="color:red; font-size:20px">Please choose seat</span>';
+          $seatError = ' <span style="color:red; font-size:20px">Cannot be blank</span>';
           $foundErrors = true;
         }
       }
@@ -307,7 +309,7 @@
     <!-- Booking Area -->
     <article id="Booking" style="padding-top:50px; padding-bottom: 50px;">
       <!-- <form action=""> -->
-      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" name="BookingForm" id="booking-form">
+      <form action="index.php#Booking" method="POST" name="BookingForm" id="booking-form">
         <h1 class="demoFont text-info text-center" style="padding-top:50px; padding-bottom:20px"> Booking Area: </h1>
         <div class="container card bg-light " style="border-color:#000000">
           <!-- BOOKING TITLE -->
@@ -410,7 +412,6 @@
                         </div>
                         <div class="col d-flex justify-content-center">
                           <select name="seats[FCP]" id="seats-FCP" class="btn btn-info dropdown-toggle" <?php if(isset($_POST['movie']['id'])&& $_POST['movie']['id']!=""){ echo 'onchange="calPrice();"';} ?>>
-                          <option value="0">Please Select</option>
                           <?php for ($i=1; $i <=10 ; $i++) { ?>
                               <option value="<?=$i?>"   <?php if(isset($_POST['seats']['FCP']) && $_POST['seats']['FCP'] ==$i){ echo 'selected';} ?>  ><?=$i?></option>
                             <?php }?>   
@@ -425,9 +426,16 @@
                         <div class="col d-flex justify-content-center">
                           <select name="seats[FCC]" id="seats-FCC" class="btn btn-info dropdown-toggle" <?php if(isset($_POST['movie']['id'])&& $_POST['movie']['id']!=""){ echo 'onchange="calPrice();"';} ?>>
                             <option value="0">Please Select</option>
-                            <?php for ($i=1; $i <=10 ; $i++) { ?>
-                              <option value="<?=$i?>"   <?php if(isset($_POST['seats']['FCC']) && $_POST['seats']['FCC'] ==$i){ echo 'selected';} ?>  ><?=$i?></option>
-                            <?php }?>   
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
                           </select>
                         </div>
                       </div>
@@ -487,19 +495,14 @@
                     <div
                       style="border-style: dashed; border-color: #17a2b8 ; height: 100%; border-radius: 35%; background-color: white;"
                       class="d-flex align-content-center justify-content-center">
-                      <input type="text" id="totalInput" value="" name="total_input" class="d-none">
-                      <p id="total" style="font-size: 30px;" class="pr-3"><?= (isset($_POST['total_input']) && $_POST['total_input'] != "") ?  '$ '.$_POST['total_input'] :""?></p>
+                      <p id="total" style="font-size: 30px;" class="pr-3"></p>
                       <p id="total-discounted" style="font-size: 30px; color: tomato;"></p>
                     </div>
                   </div>
-                  
-                  <div class="col-md-3 d-flex align-self-center justify-content-center">
+                  <div class="col-md-5 d-flex align-self-center justify-content-center">
                     <p id="note" style="font-size: 120%; color: tomato;"></p>
                   </div>
-                  <div class="col-md-2  d-flex align-self-center justify-content-end">
-                  <input class="btn btn-info float-right" type='submit' name='session-reset' value='Reset session'></div>
-                  
-                  <div class="col-md-1  d-flex align-self-center justify-content-end">                  
+                  <div class="col-md-1  d-flex align-self-center justify-content-end">
                     <input id="submit_button" class="btn btn-info" type="submit" value="Order">
                   </div>
                 </div>

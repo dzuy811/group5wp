@@ -4,7 +4,7 @@
  // Form Validation
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if (isset($_POST['session-reset'])) {
-          unset($_SESSION['cart']);         
+          unset($_SESSION['cart']);
       }
       else{      
       if(!empty($_POST)) {
