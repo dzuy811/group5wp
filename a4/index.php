@@ -11,11 +11,11 @@
         // false when there is NO error found
         $foundErrors = false;
         // Remove unnecessary tags
-        $_POST['cust']['name'] = strip_tags($_POST['cust']['name']);
-        $_POST['cust']['email'] = strip_tags($_POST['cust']['email']);
-        $_POST['cust']['mobile'] = strip_tags($_POST['cust']['mobile']);
-        $_POST['cust']['card'] = strip_tags($_POST['cust']['card']);
-        $_POST['cust']['expiry'] = strip_tags($_POST['cust']['expiry']);
+        $_POST['cust']['name'] = test_input($_POST['cust']['name']);
+        $_POST['cust']['email'] = test_input($_POST['cust']['email']);
+        $_POST['cust']['mobile'] = test_input($_POST['cust']['mobile']);
+        $_POST['cust']['card'] = test_input($_POST['cust']['card']);
+        $_POST['cust']['expiry'] = $_POST['cust']['expiry'];
         // Check movie
         if ($_POST['movie']['id'] == '') {
           $movieError = ' <span id="movieError" style="color:red; font-size:20px" ><i>Please choose a movie and suitable time!</i></span>';
