@@ -160,7 +160,7 @@ function calPrice($cart){
   $total=0;
  
   foreach($cart['seats'] as $seattype => $quantity){
-      $total += ($pricesObject[$type][$seattype]*$quantity);
+      $total += number_format(($pricesObject[$type][$seattype]*$quantity),2);
   }
   return number_format($total,2);
 }

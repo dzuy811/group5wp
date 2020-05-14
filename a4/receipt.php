@@ -2,8 +2,8 @@
     require_once('tools.php');
     if(!isset($_SESSION['cart']) || empty($_SESSION['cart'])){
           header("Location:index.php");
-    }else{
-      $_SESSION['cart']['total']=calPrice($_SESSION['cart']) +calGST(calPrice($_SESSION['cart']));
+    } else{
+      $_SESSION['cart']['total']=number_format(calPrice($_SESSION['cart']) + calGST(calPrice($_SESSION['cart'])),2);
       writeData('bookings.txt');
     }
     
@@ -98,8 +98,9 @@
       <!-- Print tax invoice -->
       <div id="tax_invoice">
             <div style="padding-top:100px">
-                  <div id="tax_invoice" class="container card" style="border-color:#000000">
-                        <h1 class="text-center" style="padding-top:50px; padding-bottom:20px">TAX INVOICE </h1>
+            <!-- A4 page style: 29.7 x 21 cm -->
+                  <div id="tax_invoice" class="container card" style="border-color:#000000; height:29.7cm; width:21cm" >
+                        <h1 class="text-center" style="padding-top:10px; padding-bottom:20px">TAX INVOICE </h1>
                         <!-- COMPANY & CUSTOMER INFORMATION -->
                         <div class="row">
                               <div class="col-6">
@@ -154,7 +155,7 @@
                                                 </tr>
                                           <?php }} ?>
                                                 
-                                                <?php for ($i=$count; $i <=9 ; $i++) { ?>
+                                                <?php for ($i=$count; $i <=6 ; $i++) { ?>
                                                       <tr>
                                                       <td class="border-left border-right border-dark"></td>
                                                       <td class="border-right border-dark"></td>
@@ -190,7 +191,7 @@
                                                       <td></td>
                                                       <td></td>
                                                       <td class="border border-dark"><b>Invoice Total</b></td>
-                                                      <td class="border border-dark"><b>$<?=calPrice($_SESSION['cart']) +calGST(calPrice($_SESSION['cart'])) ?></b></td>
+                                                      <td class="border border-dark"><b>$<?= $_SESSION['cart']['total'] ?></b></td>
                                                 </tr>  
                                                 <tr>
                                                       <td></td>
