@@ -1,2 +1,2 @@
 # group5wp
-https://s3818381.github.io/group5wp/a3/index.html
+https://github.com/s3818381/group5wp
